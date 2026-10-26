@@ -1,0 +1,13 @@
+# generated / large data (re-create with scripts; share via Drive link in README)
+data/*.csv
+!data/sample_*.csv
+# MLflow + python junk
+mlruns/
+mlartifacts/
+mlflow.db
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
