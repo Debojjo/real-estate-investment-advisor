@@ -78,13 +78,13 @@ Correlation of Amenity_Count with price per sqft = 0.002.
 | PT     |     pps |   good |
 |:-------|--------:|-------:|
 | Low    | 13085.5 |  0.375 |
-| Medium | 13062.2 |  0.472 |
-| High   | 13027.2 |  0.553 |
+| Medium | 13062.2 |  0.475 |
+| High   | 13027.2 |  0.55  |
 
 Better transport raises the good-investment rate partly by construction, because transport is part of the Infrastructure_Score used in the label. Mention this circularity.
 
 ## X1. Area vs investment return
-5-year modelled return by size band: {'XS': 44.4, 'S': 44.4, 'M': 44.5, 'L': 44.5, 'XL': 44.5} (%). Good-investment rate by band: {'XS': 0.227, 'S': 0.348, 'M': 0.471, 'L': 0.585, 'XL': 0.703}. Modelled return is flat because it comes from the growth formula, not from size. But the good-investment rate climbs sharply with size: price does not depend on size in this data, so bigger properties get a lower price per sqft and win the 'cheaper than city median' test. The label is therefore largely a size effect, which must be disclosed in the report.
+5-year modelled return by size band: {'XS': 44.4, 'S': 44.4, 'M': 44.5, 'L': 44.5, 'XL': 44.5} (%). Good-investment rate by band: {'XS': 0.465, 'S': 0.465, 'M': 0.47, 'L': 0.467, 'XL': 0.467}. Modelled return is flat because it comes from the growth formula, not from size. But the good-investment rate climbs sharply with size: price does not depend on size in this data, so bigger properties get a lower price per sqft and win the 'cheaper than city median' test. The label is therefore largely a size effect, which must be disclosed in the report.
 
 ## X2. Infrastructure score vs resale value
 
