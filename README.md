@@ -11,7 +11,9 @@ Stack: Python, pandas, scikit-learn, XGBoost, MLflow, Streamlit.
 - `models/` - saved best models (`classifier.joblib`, `regressor.joblib`, `metrics.json`)
 - `docs/models/` - results table, confusion matrices, feature importance
 - `docs/mlflow/` - MLflow screenshots (runs and registered models)
-- `app/` - Streamlit app (added in a later step)
+- `scripts/make_app_sample.py` - builds the small dataset the app uses (`data/sample_app.csv`)
+- `app/app.py` - Streamlit app (predict, explore, market insights, model details)
+- `docs/app/` - app screenshots
 - `data/` - datasets (not committed; see below)
 
 ## Run
@@ -20,8 +22,13 @@ pip install -r requirements.txt
 python scripts/step1_preprocess.py data/india_housing_prices.csv data
 python scripts/step2_eda.py data/cleaned_housing.csv docs/eda
 python scripts/step3_train.py data/cleaned_housing.csv models
+python scripts/make_app_sample.py data/cleaned_housing.csv data/sample_app.csv
+streamlit run app/app.py
 mlflow ui --backend-store-uri sqlite:///mlflow.db
 ```
+
+## App
+Four tabs: **Predict** (form -> Good Investment? with confidence, 5-year price estimate, per-prediction drivers), **Explore properties** (filter by city, price, area, BHK, type; model scores for every match), **Market insights** (city heatmaps, build-decade trend, state and infrastructure charts) and **Model details** (metrics, confusion matrix, feature importance, leakage check).
 
 ## Method
 - **Label ("Good Investment"):** 7-point score. Price at or below the same-city, same-BHK median (2 points), BHK >= 3, ready to move, infrastructure score above median, parking or security (1 point each). Good = score >= 4.
