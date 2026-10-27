@@ -74,7 +74,7 @@ df["Growth_Rate"] = (0.05 + 0.03 * df["Infrastructure_Score"] + 0.01 * df["Is_Re
                      + 0.005 * (df["Security_Flag"] + df["Parking_Flag"]) + 0.005 * (df["Age_of_Property"] < 10)).clip(0.05, 0.10).round(4)
 df["Future_Price_5Y"] = (df["Price_in_Lakhs"] * (1 + df["Growth_Rate"]) ** T).round(2)
 
-# Classification: multi-factor score (doc option 3) - 7 points, Good Investment if >= 4
+# Classification: multi-factor score (doc option 3) - 6 points max, Good Investment if >= 4
 df["Investment_Score"] = (
     2 * (df["Price_in_Lakhs"] <= df["City_BHK_Median_Price"])      # cheaper than same-city, same-BHK median
     + 1 * (df["BHK"] >= 3)

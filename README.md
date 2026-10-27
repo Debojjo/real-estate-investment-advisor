@@ -3,10 +3,13 @@
 Predicts whether a property is a "Good Investment" (classification) and its estimated price after 5 years (regression).
 Stack: Python, pandas, scikit-learn, XGBoost, MLflow, Streamlit.
 
+**Live app:** <add Streamlit link here> | **Full documentation:** [docs/PROJECT_DOCUMENTATION.md](docs/PROJECT_DOCUMENTATION.md) | **MLflow logs:** <https://drive.google.com/drive/folders/1-a0epP92o1qCvBXUQV6qqaloZAC16O_R?usp=sharing>
+
 ## Project structure
 - `scripts/step1_preprocess.py` - cleaning, feature engineering, labels
 - `scripts/step2_eda.py` - 20 EDA questions + charts (`docs/eda/`)
 - `scripts/common.py` - shared feature code (used by training and the app)
+- `scripts/step2b_stats.py` - statistical significance tests (`docs/stats_tests.md`)
 - `scripts/step3_train.py` - model training, evaluation, MLflow tracking, model registry
 - `models/` - saved best models (`classifier.joblib`, `regressor.joblib`, `metrics.json`)
 - `docs/models/` - results table, confusion matrices, feature importance
@@ -22,6 +25,7 @@ Stack: Python, pandas, scikit-learn, XGBoost, MLflow, Streamlit.
 pip install -r requirements.txt
 python scripts/step1_preprocess.py data/india_housing_prices.csv data
 python scripts/step2_eda.py data/cleaned_housing.csv docs/eda
+python scripts/step2b_stats.py data/cleaned_housing.csv docs
 python scripts/step3_train.py data/cleaned_housing.csv models
 python scripts/make_app_sample.py data/cleaned_housing.csv data/sample_app.csv
 python scripts/make_app_aggregates.py data/cleaned_housing.csv data
@@ -33,7 +37,7 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db
 Four tabs: **Predict** (form -> Good Investment? with confidence, 5-year price estimate, per-prediction drivers), **Explore properties** (filter by city, price, area, BHK, type; model scores for every match, on a random 20,000-row sample to keep the app light), **Market insights** (city heatmaps computed from all 250,000 rows, build-decade trend, state and infrastructure charts) and **Model details** (metrics, confusion matrix, feature importance, leakage check).
 
 ## Method
-- **Label ("Good Investment"):** 7-point score. Price at or below the same-city, same-BHK median (2 points), BHK >= 3, ready to move, infrastructure score above median, parking or security (1 point each). Good = score >= 4.
+- **Label ("Good Investment"):** 6-point score. Price at or below the same-city, same-BHK median (2 points), BHK >= 3, ready to move, infrastructure score above median, parking or security (1 point each). Good = score >= 4.
 - **Future price:** `Price x (1 + r)^5`, where r (5% to 10%) depends on infrastructure, readiness, security, parking and building age. The dataset has no price history, so this growth rule is an assumption.
 - **Split:** 80/20 train/test, stratified on the label, random_state 42.
 
