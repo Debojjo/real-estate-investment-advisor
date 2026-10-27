@@ -1,0 +1,505 @@
+City,Property_Type,Build_Decade,n,sum_pps
+Ahmedabad,Apartment,1990s,603,7648852.18
+Ahmedabad,Apartment,2000s,580,7297733.95
+Ahmedabad,Apartment,2010s,621,7901907.42
+Ahmedabad,Apartment,2020s,245,3100607.19
+Ahmedabad,Independent House,1990s,652,7790364.16
+Ahmedabad,Independent House,2000s,621,8068753.32
+Ahmedabad,Independent House,2010s,647,8672303.81
+Ahmedabad,Independent House,2020s,253,3738500.63
+Ahmedabad,Villa,1990s,638,8428395.38
+Ahmedabad,Villa,2000s,662,8490624.02
+Ahmedabad,Villa,2010s,638,7858523.63
+Ahmedabad,Villa,2020s,251,3165730.06
+Amritsar,Apartment,1990s,624,7821801.09
+Amritsar,Apartment,2000s,588,7075926.91
+Amritsar,Apartment,2010s,607,8641301.24
+Amritsar,Apartment,2020s,238,3291407.85
+Amritsar,Independent House,1990s,604,7689779.6
+Amritsar,Independent House,2000s,613,7609568.33
+Amritsar,Independent House,2010s,603,7949410.69
+Amritsar,Independent House,2020s,250,3355560.03
+Amritsar,Villa,1990s,643,8409198.04
+Amritsar,Villa,2000s,598,7536939.91
+Amritsar,Villa,2010s,615,8164661.5
+Amritsar,Villa,2020s,238,2921739.17
+Bangalore,Apartment,1990s,402,5723667.87
+Bangalore,Apartment,2000s,387,5038753.05
+Bangalore,Apartment,2010s,417,5624235.55
+Bangalore,Apartment,2020s,180,2625909.2
+Bangalore,Independent House,1990s,420,5698668.19
+Bangalore,Independent House,2000s,384,4746980.58
+Bangalore,Independent House,2010s,408,5244882.43
+Bangalore,Independent House,2020s,165,2224747.97
+Bangalore,Villa,1990s,387,4798683.81
+Bangalore,Villa,2000s,427,5880059.67
+Bangalore,Villa,2010s,427,5129563.93
+Bangalore,Villa,2020s,140,1714032.7
+Bhopal,Apartment,1990s,628,7828281.81
+Bhopal,Apartment,2000s,581,7662000.0
+Bhopal,Apartment,2010s,645,8083631.46
+Bhopal,Apartment,2020s,270,3946400.65
+Bhopal,Independent House,1990s,572,6783087.83
+Bhopal,Independent House,2000s,641,8329712.88
+Bhopal,Independent House,2010s,612,8219857.75
+Bhopal,Independent House,2020s,249,3205820.56
+Bhopal,Villa,1990s,613,8000704.28
+Bhopal,Villa,2000s,626,8324643.89
+Bhopal,Villa,2010s,617,7705315.24
+Bhopal,Villa,2020s,230,3345807.11
+Bhubaneswar,Apartment,1990s,659,8667838.04
+Bhubaneswar,Apartment,2000s,631,8573780.96
+Bhubaneswar,Apartment,2010s,620,7621228.89
+Bhubaneswar,Apartment,2020s,239,2887666.7
+Bhubaneswar,Independent House,1990s,566,7335477.72
+Bhubaneswar,Independent House,2000s,549,7459761.53
+Bhubaneswar,Independent House,2010s,596,7871284.42
+Bhubaneswar,Independent House,2020s,255,3167124.3
+Bhubaneswar,Villa,1990s,631,8389725.74
+Bhubaneswar,Villa,2000s,668,9424115.95
+Bhubaneswar,Villa,2010s,648,8114738.93
+Bhubaneswar,Villa,2020s,261,3531922.31
+Bilaspur,Apartment,1990s,583,8060442.25
+Bilaspur,Apartment,2000s,618,8347452.53
+Bilaspur,Apartment,2010s,624,8007840.78
+Bilaspur,Apartment,2020s,262,3679095.44
+Bilaspur,Independent House,1990s,585,8006513.97
+Bilaspur,Independent House,2000s,640,7969425.4
+Bilaspur,Independent House,2010s,608,7534917.31
+Bilaspur,Independent House,2020s,257,3096618.42
+Bilaspur,Villa,1990s,601,7712071.78
+Bilaspur,Villa,2000s,668,8018509.28
+Bilaspur,Villa,2010s,574,7400612.96
+Bilaspur,Villa,2020s,243,3153772.19
+Chennai,Apartment,1990s,593,7436171.22
+Chennai,Apartment,2000s,612,7904808.26
+Chennai,Apartment,2010s,617,8221187.29
+Chennai,Apartment,2020s,245,3226748.71
+Chennai,Independent House,1990s,593,8305249.42
+Chennai,Independent House,2000s,607,8597717.04
+Chennai,Independent House,2010s,594,7150715.77
+Chennai,Independent House,2020s,231,2975620.74
+Chennai,Villa,1990s,621,8399794.73
+Chennai,Villa,2000s,593,7783473.25
+Chennai,Villa,2010s,603,8031541.44
+Chennai,Villa,2020s,259,3130233.03
+Coimbatore,Apartment,1990s,642,8386957.12
+Coimbatore,Apartment,2000s,652,8642307.72
+Coimbatore,Apartment,2010s,624,8168224.52
+Coimbatore,Apartment,2020s,251,2843430.51
+Coimbatore,Independent House,1990s,662,9114552.14
+Coimbatore,Independent House,2000s,623,8077119.34
+Coimbatore,Independent House,2010s,607,7614040.56
+Coimbatore,Independent House,2020s,242,3312424.72
+Coimbatore,Villa,1990s,677,8874927.97
+Coimbatore,Villa,2000s,592,7573954.88
+Coimbatore,Villa,2010s,633,8758966.08
+Coimbatore,Villa,2020s,256,3319176.37
+Cuttack,Apartment,1990s,627,8045083.33
+Cuttack,Apartment,2000s,667,8448860.07
+Cuttack,Apartment,2010s,653,8512431.0
+Cuttack,Apartment,2020s,245,3037896.99
+Cuttack,Independent House,1990s,627,7905261.61
+Cuttack,Independent House,2000s,570,7477379.43
+Cuttack,Independent House,2010s,594,7944472.78
+Cuttack,Independent House,2020s,278,3485821.18
+Cuttack,Villa,1990s,602,7987402.88
+Cuttack,Villa,2000s,636,8062066.47
+Cuttack,Villa,2010s,612,7946847.2
+Cuttack,Villa,2020s,247,3372258.33
+Dehradun,Apartment,1990s,609,8163915.31
+Dehradun,Apartment,2000s,664,8490999.71
+Dehradun,Apartment,2010s,589,7528222.13
+Dehradun,Apartment,2020s,225,2799414.03
+Dehradun,Independent House,1990s,634,8032198.89
+Dehradun,Independent House,2000s,594,7814152.25
+Dehradun,Independent House,2010s,617,8402488.78
+Dehradun,Independent House,2020s,226,2679900.04
+Dehradun,Villa,1990s,626,7889122.84
+Dehradun,Villa,2000s,620,8011009.01
+Dehradun,Villa,2010s,584,8013099.35
+Dehradun,Villa,2020s,246,3255908.01
+Durgapur,Apartment,1990s,621,8550397.17
+Durgapur,Apartment,2000s,642,8202517.11
+Durgapur,Apartment,2010s,624,8090740.54
+Durgapur,Apartment,2020s,264,3042607.79
+Durgapur,Independent House,1990s,657,9001024.23
+Durgapur,Independent House,2000s,611,8433628.75
+Durgapur,Independent House,2010s,577,7674644.13
+Durgapur,Independent House,2020s,249,3158447.23
+Durgapur,Villa,1990s,614,8111531.38
+Durgapur,Villa,2000s,629,8358226.15
+Durgapur,Villa,2010s,622,8106295.97
+Durgapur,Villa,2020s,277,3486853.84
+Dwarka,Apartment,1990s,562,7302112.9
+Dwarka,Apartment,2000s,576,7070287.78
+Dwarka,Apartment,2010s,606,7960365.76
+Dwarka,Apartment,2020s,244,2872818.17
+Dwarka,Independent House,1990s,612,8003840.12
+Dwarka,Independent House,2000s,648,8461739.12
+Dwarka,Independent House,2010s,571,7410193.52
+Dwarka,Independent House,2020s,243,3171906.25
+Dwarka,Villa,1990s,633,8285357.81
+Dwarka,Villa,2000s,663,8099874.28
+Dwarka,Villa,2010s,635,8477816.7
+Dwarka,Villa,2020s,253,3494789.77
+Faridabad,Apartment,1990s,582,7102368.69
+Faridabad,Apartment,2000s,576,7734701.02
+Faridabad,Apartment,2010s,625,8309023.86
+Faridabad,Apartment,2020s,228,3130992.76
+Faridabad,Independent House,1990s,589,8107855.39
+Faridabad,Independent House,2000s,652,8676095.33
+Faridabad,Independent House,2010s,599,7814634.53
+Faridabad,Independent House,2020s,284,3939527.71
+Faridabad,Villa,1990s,639,8107532.22
+Faridabad,Villa,2000s,589,7498818.56
+Faridabad,Villa,2010s,594,6934110.37
+Faridabad,Villa,2020s,212,2904926.45
+Gaya,Apartment,1990s,573,7899008.62
+Gaya,Apartment,2000s,629,8561531.13
+Gaya,Apartment,2010s,622,8140769.18
+Gaya,Apartment,2020s,261,3601032.5
+Gaya,Independent House,1990s,558,7304641.19
+Gaya,Independent House,2000s,622,7911914.58
+Gaya,Independent House,2010s,617,7856973.01
+Gaya,Independent House,2020s,247,3251829.06
+Gaya,Villa,1990s,610,8442862.65
+Gaya,Villa,2000s,574,7000408.4
+Gaya,Villa,2010s,621,7973142.37
+Gaya,Villa,2020s,236,3169204.15
+Gurgaon,Apartment,1990s,590,7773674.68
+Gurgaon,Apartment,2000s,631,8071800.17
+Gurgaon,Apartment,2010s,612,8470371.12
+Gurgaon,Apartment,2020s,257,3124279.62
+Gurgaon,Independent House,1990s,580,7492509.82
+Gurgaon,Independent House,2000s,554,7350008.38
+Gurgaon,Independent House,2010s,631,7984011.23
+Gurgaon,Independent House,2020s,236,3144654.67
+Gurgaon,Villa,1990s,652,8521868.46
+Gurgaon,Villa,2000s,601,8241827.63
+Gurgaon,Villa,2010s,584,7673278.77
+Gurgaon,Villa,2020s,217,2819603.67
+Guwahati,Apartment,1990s,582,7291087.99
+Guwahati,Apartment,2000s,579,7122762.72
+Guwahati,Apartment,2010s,594,8248666.69
+Guwahati,Apartment,2020s,249,3202071.22
+Guwahati,Independent House,1990s,595,8156798.09
+Guwahati,Independent House,2000s,578,7576219.71
+Guwahati,Independent House,2010s,640,8149371.18
+Guwahati,Independent House,2020s,239,3277395.8
+Guwahati,Villa,1990s,577,7227531.03
+Guwahati,Villa,2000s,590,7627548.43
+Guwahati,Villa,2010s,619,7915549.3
+Guwahati,Villa,2020s,250,3428394.83
+Haridwar,Apartment,1990s,611,8665907.3
+Haridwar,Apartment,2000s,559,7124147.6
+Haridwar,Apartment,2010s,606,7867422.02
+Haridwar,Apartment,2020s,250,3308075.18
+Haridwar,Independent House,1990s,627,8316195.36
+Haridwar,Independent House,2000s,612,8104440.03
+Haridwar,Independent House,2010s,585,7696256.28
+Haridwar,Independent House,2020s,242,3088671.76
+Haridwar,Villa,1990s,629,7377438.92
+Haridwar,Villa,2000s,642,8207835.57
+Haridwar,Villa,2010s,635,8468554.32
+Haridwar,Villa,2020s,269,3546336.13
+Hyderabad,Apartment,1990s,598,7839028.16
+Hyderabad,Apartment,2000s,620,8029022.77
+Hyderabad,Apartment,2010s,609,8510743.75
+Hyderabad,Apartment,2020s,246,3563633.04
+Hyderabad,Independent House,1990s,591,7929706.33
+Hyderabad,Independent House,2000s,605,8084133.88
+Hyderabad,Independent House,2010s,672,8443697.03
+Hyderabad,Independent House,2020s,252,3003052.99
+Hyderabad,Villa,1990s,600,8029902.38
+Hyderabad,Villa,2000s,606,8198814.05
+Hyderabad,Villa,2010s,609,8127083.0
+Hyderabad,Villa,2020s,265,3224424.66
+Indore,Apartment,1990s,592,7659951.96
+Indore,Apartment,2000s,613,7663723.13
+Indore,Apartment,2010s,598,7667676.59
+Indore,Apartment,2020s,235,2929677.89
+Indore,Independent House,1990s,634,8629125.41
+Indore,Independent House,2000s,596,7657006.9
+Indore,Independent House,2010s,601,8271016.83
+Indore,Independent House,2020s,238,3441060.7
+Indore,Villa,1990s,561,7285228.45
+Indore,Villa,2000s,616,8204429.6
+Indore,Villa,2010s,625,8300469.54
+Indore,Villa,2020s,258,3577852.13
+Jaipur,Apartment,1990s,623,8925689.99
+Jaipur,Apartment,2000s,535,6464768.45
+Jaipur,Apartment,2010s,605,7331049.58
+Jaipur,Apartment,2020s,224,2765972.66
+Jaipur,Independent House,1990s,612,8056259.95
+Jaipur,Independent House,2000s,645,7841911.13
+Jaipur,Independent House,2010s,659,8293920.34
+Jaipur,Independent House,2020s,247,3369065.26
+Jaipur,Villa,1990s,586,8063197.58
+Jaipur,Villa,2000s,611,8154770.18
+Jaipur,Villa,2010s,634,8143627.54
+Jaipur,Villa,2020s,250,3148560.52
+Jamshedpur,Apartment,1990s,616,7817584.61
+Jamshedpur,Apartment,2000s,610,7837003.58
+Jamshedpur,Apartment,2010s,605,7704610.53
+Jamshedpur,Apartment,2020s,254,3676210.55
+Jamshedpur,Independent House,1990s,648,8308971.62
+Jamshedpur,Independent House,2000s,612,7715100.36
+Jamshedpur,Independent House,2010s,616,8053446.87
+Jamshedpur,Independent House,2020s,240,3508200.4
+Jamshedpur,Villa,1990s,651,8299326.45
+Jamshedpur,Villa,2000s,626,7565077.08
+Jamshedpur,Villa,2010s,628,7819414.66
+Jamshedpur,Villa,2020s,229,3004722.47
+Jodhpur,Apartment,1990s,622,8139490.63
+Jodhpur,Apartment,2000s,600,8128731.36
+Jodhpur,Apartment,2010s,630,8403600.23
+Jodhpur,Apartment,2020s,260,3401907.73
+Jodhpur,Independent House,1990s,608,7928183.09
+Jodhpur,Independent House,2000s,548,6731684.14
+Jodhpur,Independent House,2010s,597,7363815.58
+Jodhpur,Independent House,2020s,245,3372506.98
+Jodhpur,Villa,1990s,555,6989524.78
+Jodhpur,Villa,2000s,609,7700539.51
+Jodhpur,Villa,2010s,632,8112966.7
+Jodhpur,Villa,2020s,265,3553081.8
+Kochi,Apartment,1990s,625,8388196.69
+Kochi,Apartment,2000s,618,7733933.41
+Kochi,Apartment,2010s,622,8036770.5
+Kochi,Apartment,2020s,248,3418900.45
+Kochi,Independent House,1990s,642,8402316.84
+Kochi,Independent House,2000s,607,8287993.48
+Kochi,Independent House,2010s,606,7920342.7
+Kochi,Independent House,2020s,239,3170289.37
+Kochi,Villa,1990s,610,8316374.66
+Kochi,Villa,2000s,619,8187118.71
+Kochi,Villa,2010s,633,8524435.86
+Kochi,Villa,2020s,236,2856415.49
+Kolkata,Apartment,1990s,603,7972982.14
+Kolkata,Apartment,2000s,640,8170387.74
+Kolkata,Apartment,2010s,632,8094722.2
+Kolkata,Apartment,2020s,228,2777355.33
+Kolkata,Independent House,1990s,606,8028003.68
+Kolkata,Independent House,2000s,622,8103769.85
+Kolkata,Independent House,2010s,573,7308733.29
+Kolkata,Independent House,2020s,229,3145305.15
+Kolkata,Villa,1990s,600,8046986.77
+Kolkata,Villa,2000s,641,8092926.82
+Kolkata,Villa,2010s,598,7533311.1
+Kolkata,Villa,2020s,263,3358851.81
+Lucknow,Apartment,1990s,584,7287934.05
+Lucknow,Apartment,2000s,620,8662521.84
+Lucknow,Apartment,2010s,590,7792097.34
+Lucknow,Apartment,2020s,262,3340676.03
+Lucknow,Independent House,1990s,639,8049453.91
+Lucknow,Independent House,2000s,615,8837058.67
+Lucknow,Independent House,2010s,601,8031971.06
+Lucknow,Independent House,2020s,243,3252559.26
+Lucknow,Villa,1990s,615,7861219.34
+Lucknow,Villa,2000s,614,7895368.98
+Lucknow,Villa,2010s,621,8212860.9
+Lucknow,Villa,2020s,233,2752637.67
+Ludhiana,Apartment,1990s,609,8119709.57
+Ludhiana,Apartment,2000s,611,7405845.91
+Ludhiana,Apartment,2010s,586,7406744.01
+Ludhiana,Apartment,2020s,229,2910140.22
+Ludhiana,Independent House,1990s,605,8159894.03
+Ludhiana,Independent House,2000s,653,8278560.62
+Ludhiana,Independent House,2010s,625,8505424.2
+Ludhiana,Independent House,2020s,228,2966894.13
+Ludhiana,Villa,1990s,621,8154575.91
+Ludhiana,Villa,2000s,653,8443498.95
+Ludhiana,Villa,2010s,634,7775170.31
+Ludhiana,Villa,2020s,241,3256746.5
+Mangalore,Apartment,1990s,377,5024133.57
+Mangalore,Apartment,2000s,392,5395909.21
+Mangalore,Apartment,2010s,378,5214868.08
+Mangalore,Apartment,2020s,161,2328466.03
+Mangalore,Independent House,1990s,397,5626185.2
+Mangalore,Independent House,2000s,419,5350339.21
+Mangalore,Independent House,2010s,399,5430513.61
+Mangalore,Independent House,2020s,168,2247871.38
+Mangalore,Villa,1990s,419,5259746.99
+Mangalore,Villa,2000s,410,5445535.2
+Mangalore,Villa,2010s,380,4895493.73
+Mangalore,Villa,2020s,163,2124991.44
+Mumbai,Apartment,1990s,420,5506530.72
+Mumbai,Apartment,2000s,407,5186768.54
+Mumbai,Apartment,2010s,406,5194998.6
+Mumbai,Apartment,2020s,169,2343938.89
+Mumbai,Independent House,1990s,397,5185276.4
+Mumbai,Independent House,2000s,424,5420040.75
+Mumbai,Independent House,2010s,394,5386959.63
+Mumbai,Independent House,2020s,167,1912545.41
+Mumbai,Villa,1990s,386,5351423.75
+Mumbai,Villa,2000s,395,5406518.23
+Mumbai,Villa,2010s,425,5610491.26
+Mumbai,Villa,2020s,159,2123040.38
+Mysore,Apartment,1990s,418,5038217.53
+Mysore,Apartment,2000s,413,5373167.84
+Mysore,Apartment,2010s,412,5133712.5
+Mysore,Apartment,2020s,166,2240960.66
+Mysore,Independent House,1990s,454,6378621.64
+Mysore,Independent House,2000s,390,5182038.12
+Mysore,Independent House,2010s,407,5467973.86
+Mysore,Independent House,2020s,167,2062654.99
+Mysore,Villa,1990s,418,5609872.79
+Mysore,Villa,2000s,405,5570484.14
+Mysore,Villa,2010s,403,5692317.89
+Mysore,Villa,2020s,164,2101132.9
+Nagpur,Apartment,1990s,397,4969695.22
+Nagpur,Apartment,2000s,402,5471244.6
+Nagpur,Apartment,2010s,370,4591739.38
+Nagpur,Apartment,2020s,156,1871376.91
+Nagpur,Independent House,1990s,435,5539227.16
+Nagpur,Independent House,2000s,406,5345325.57
+Nagpur,Independent House,2010s,413,5134638.18
+Nagpur,Independent House,2020s,183,2543990.16
+Nagpur,Villa,1990s,412,5469780.28
+Nagpur,Villa,2000s,395,4770048.72
+Nagpur,Villa,2010s,433,5381598.29
+Nagpur,Villa,2020s,158,1933621.6
+New Delhi,Apartment,1990s,625,7812850.34
+New Delhi,Apartment,2000s,647,8435122.49
+New Delhi,Apartment,2010s,590,7784043.87
+New Delhi,Apartment,2020s,226,2970675.74
+New Delhi,Independent House,1990s,603,7844114.08
+New Delhi,Independent House,2000s,606,7480757.85
+New Delhi,Independent House,2010s,618,7866656.14
+New Delhi,Independent House,2020s,252,3316810.35
+New Delhi,Villa,1990s,648,8535354.91
+New Delhi,Villa,2000s,586,7868851.59
+New Delhi,Villa,2010s,650,8628421.19
+New Delhi,Villa,2020s,255,3285050.63
+Noida,Apartment,1990s,586,8078640.85
+Noida,Apartment,2000s,634,8363849.17
+Noida,Apartment,2010s,607,8170947.88
+Noida,Apartment,2020s,251,3200535.11
+Noida,Independent House,1990s,603,8236352.82
+Noida,Independent House,2000s,637,8572601.18
+Noida,Independent House,2010s,637,8218285.52
+Noida,Independent House,2020s,260,3137381.87
+Noida,Villa,1990s,610,8114443.54
+Noida,Villa,2000s,605,7802045.39
+Noida,Villa,2010s,597,7359676.62
+Noida,Villa,2020s,244,3155516.78
+Patna,Apartment,1990s,620,8259744.53
+Patna,Apartment,2000s,608,8345980.85
+Patna,Apartment,2010s,625,8101357.41
+Patna,Apartment,2020s,211,2865996.99
+Patna,Independent House,1990s,599,7330538.17
+Patna,Independent House,2000s,604,8233125.23
+Patna,Independent House,2010s,583,7005574.35
+Patna,Independent House,2020s,243,3126906.37
+Patna,Villa,1990s,624,7726645.63
+Patna,Villa,2000s,619,8604902.6
+Patna,Villa,2010s,630,7803369.26
+Patna,Villa,2020s,233,2905672.37
+Pune,Apartment,1990s,416,5601489.68
+Pune,Apartment,2000s,373,5059646.91
+Pune,Apartment,2010s,390,4858258.68
+Pune,Apartment,2020s,176,2308035.46
+Pune,Independent House,1990s,420,5744262.94
+Pune,Independent House,2000s,419,5565079.96
+Pune,Independent House,2010s,417,6124853.81
+Pune,Independent House,2020s,172,2273826.16
+Pune,Villa,1990s,415,5195880.41
+Pune,Villa,2000s,443,5377563.06
+Pune,Villa,2010s,410,5592081.03
+Pune,Villa,2020s,173,2456190.53
+Raipur,Apartment,1990s,565,7326561.85
+Raipur,Apartment,2000s,647,8027951.5
+Raipur,Apartment,2010s,599,8105778.21
+Raipur,Apartment,2020s,236,3159948.13
+Raipur,Independent House,1990s,604,8264840.86
+Raipur,Independent House,2000s,615,7570817.78
+Raipur,Independent House,2010s,592,7851066.06
+Raipur,Independent House,2020s,255,3236997.43
+Raipur,Villa,1990s,608,7774933.48
+Raipur,Villa,2000s,621,8566735.7
+Raipur,Villa,2010s,598,8233718.42
+Raipur,Villa,2020s,253,3159309.45
+Ranchi,Apartment,1990s,594,7890267.95
+Ranchi,Apartment,2000s,625,8096132.36
+Ranchi,Apartment,2010s,605,7886188.82
+Ranchi,Apartment,2020s,267,3756074.0
+Ranchi,Independent House,1990s,630,8210748.19
+Ranchi,Independent House,2000s,563,7977244.6
+Ranchi,Independent House,2010s,615,7616566.41
+Ranchi,Independent House,2020s,228,2767015.2
+Ranchi,Villa,1990s,587,7524059.06
+Ranchi,Villa,2000s,568,7616924.76
+Ranchi,Villa,2010s,630,8049775.42
+Ranchi,Villa,2020s,233,3233094.61
+Silchar,Apartment,1990s,665,8957631.55
+Silchar,Apartment,2000s,626,8309196.89
+Silchar,Apartment,2010s,650,8270001.4
+Silchar,Apartment,2020s,242,3010047.18
+Silchar,Independent House,1990s,610,7832180.67
+Silchar,Independent House,2000s,639,8123783.03
+Silchar,Independent House,2010s,599,7776818.11
+Silchar,Independent House,2020s,252,3512016.06
+Silchar,Villa,1990s,596,7910488.62
+Silchar,Villa,2000s,663,8830807.3
+Silchar,Villa,2010s,609,8460377.2
+Silchar,Villa,2020s,253,3281188.86
+Surat,Apartment,1990s,583,7372257.49
+Surat,Apartment,2000s,641,8029336.34
+Surat,Apartment,2010s,593,8058971.45
+Surat,Apartment,2020s,220,3079149.56
+Surat,Independent House,1990s,595,7914080.58
+Surat,Independent House,2000s,631,8383549.19
+Surat,Independent House,2010s,622,8583829.09
+Surat,Independent House,2020s,247,3517941.99
+Surat,Villa,1990s,585,7772485.36
+Surat,Villa,2000s,604,8570307.36
+Surat,Villa,2010s,636,8502849.76
+Surat,Villa,2020s,210,2713381.82
+Trivandrum,Apartment,1990s,564,7705779.53
+Trivandrum,Apartment,2000s,604,7770844.36
+Trivandrum,Apartment,2010s,602,7116386.19
+Trivandrum,Apartment,2020s,244,3229405.46
+Trivandrum,Independent House,1990s,617,8077938.83
+Trivandrum,Independent House,2000s,625,7927817.59
+Trivandrum,Independent House,2010s,572,7228964.34
+Trivandrum,Independent House,2020s,282,4037696.06
+Trivandrum,Villa,1990s,610,7570387.21
+Trivandrum,Villa,2000s,586,7387037.8
+Trivandrum,Villa,2010s,628,7949060.98
+Trivandrum,Villa,2020s,248,2864540.67
+Vijayawada,Apartment,1990s,617,7555734.55
+Vijayawada,Apartment,2000s,618,8258175.44
+Vijayawada,Apartment,2010s,613,7754329.74
+Vijayawada,Apartment,2020s,258,3175373.69
+Vijayawada,Independent House,1990s,616,8567642.04
+Vijayawada,Independent House,2000s,629,8265182.24
+Vijayawada,Independent House,2010s,612,8126391.93
+Vijayawada,Independent House,2020s,254,3321845.14
+Vijayawada,Villa,1990s,637,8341754.61
+Vijayawada,Villa,2000s,605,8086140.86
+Vijayawada,Villa,2010s,637,8708344.09
+Vijayawada,Villa,2020s,248,3323991.45
+Vishakhapatnam,Apartment,1990s,589,8179678.66
+Vishakhapatnam,Apartment,2000s,601,8009670.03
+Vishakhapatnam,Apartment,2010s,610,8043720.44
+Vishakhapatnam,Apartment,2020s,262,3804835.38
+Vishakhapatnam,Independent House,1990s,591,7959614.59
+Vishakhapatnam,Independent House,2000s,641,8458435.66
+Vishakhapatnam,Independent House,2010s,590,7972637.36
+Vishakhapatnam,Independent House,2020s,248,3134315.96
+Vishakhapatnam,Villa,1990s,586,7426509.75
+Vishakhapatnam,Villa,2000s,624,8036554.61
+Vishakhapatnam,Villa,2010s,546,6957554.31
+Vishakhapatnam,Villa,2020s,230,3049643.59
+Warangal,Apartment,1990s,636,7981705.89
+Warangal,Apartment,2000s,594,7334478.9
+Warangal,Apartment,2010s,595,8319664.27
+Warangal,Apartment,2020s,238,2840419.26
+Warangal,Independent House,1990s,607,7828885.03
+Warangal,Independent House,2000s,648,8130921.83
+Warangal,Independent House,2010s,607,7822221.83
+Warangal,Independent House,2020s,268,3485094.37
+Warangal,Villa,1990s,614,8084359.0
+Warangal,Villa,2000s,593,7911618.84
+Warangal,Villa,2010s,624,7860633.27
+Warangal,Villa,2020s,242,3591123.02

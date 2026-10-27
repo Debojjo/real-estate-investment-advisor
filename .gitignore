@@ -1,6 +1,7 @@
 # generated / large data (re-create with scripts; share via Drive link in README)
 data/*.csv
 !data/sample_*.csv
+!data/agg_*.csv
 # MLflow + python junk
 mlruns/
 mlartifacts/

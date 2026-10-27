@@ -12,6 +12,7 @@ Stack: Python, pandas, scikit-learn, XGBoost, MLflow, Streamlit.
 - `docs/models/` - results table, confusion matrices, feature importance
 - `docs/mlflow/` - MLflow screenshots (runs and registered models)
 - `scripts/make_app_sample.py` - builds the small dataset the app uses (`data/sample_app.csv`)
+- `scripts/make_app_aggregates.py` - precomputes the Market insights numbers from all 250,000 rows (`data/agg_*.csv`)
 - `app/app.py` - Streamlit app (predict, explore, market insights, model details)
 - `docs/app/` - app screenshots
 - `data/` - datasets (not committed; see below)
@@ -23,12 +24,13 @@ python scripts/step1_preprocess.py data/india_housing_prices.csv data
 python scripts/step2_eda.py data/cleaned_housing.csv docs/eda
 python scripts/step3_train.py data/cleaned_housing.csv models
 python scripts/make_app_sample.py data/cleaned_housing.csv data/sample_app.csv
+python scripts/make_app_aggregates.py data/cleaned_housing.csv data
 streamlit run app/app.py
 mlflow ui --backend-store-uri sqlite:///mlflow.db
 ```
 
 ## App
-Four tabs: **Predict** (form -> Good Investment? with confidence, 5-year price estimate, per-prediction drivers), **Explore properties** (filter by city, price, area, BHK, type; model scores for every match), **Market insights** (city heatmaps, build-decade trend, state and infrastructure charts) and **Model details** (metrics, confusion matrix, feature importance, leakage check).
+Four tabs: **Predict** (form -> Good Investment? with confidence, 5-year price estimate, per-prediction drivers), **Explore properties** (filter by city, price, area, BHK, type; model scores for every match, on a random 20,000-row sample to keep the app light), **Market insights** (city heatmaps computed from all 250,000 rows, build-decade trend, state and infrastructure charts) and **Model details** (metrics, confusion matrix, feature importance, leakage check).
 
 ## Method
 - **Label ("Good Investment"):** 7-point score. Price at or below the same-city, same-BHK median (2 points), BHK >= 3, ready to move, infrastructure score above median, parking or security (1 point each). Good = score >= 4.
@@ -42,6 +44,8 @@ Four tabs: **Predict** (form -> Good Investment? with confidence, 5-year price e
 | Regression | XGBoost (depth 6) | RMSE 1.17 lakhs, MAE 0.93 lakhs, R2 0.99997 |
 
 Full tables: `docs/models/model_results.md`.
+
+**Reading the confidence score:** it shows how clearly a property meets the investment rule the model learned, so most properties get close to 0% or 100%. Only properties sitting right on a threshold (for example, priced within about 1% of the city/BHK median) get values like 50-80%. It is not a real-world guarantee.
 
 **Limitations:** the dataset looks synthetic (price is uncorrelated with size, BHK and location), and both targets are computed from the inputs, so the scores are very high by construction. With price inputs removed, classification accuracy drops to about 65% and regression R2 to about 0. The fixed 8% rule already gives R2 0.9916, so the regression model's gain is lower error (RMSE 1.17 vs 18.77), not a new signal.
 

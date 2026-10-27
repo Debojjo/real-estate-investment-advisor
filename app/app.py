@@ -36,6 +36,13 @@ def load_data():
 
 
 @st.cache_data
+def load_agg():
+    d = ROOT / "data"
+    return (pd.read_csv(d / "agg_heatmap.csv"), pd.read_csv(d / "agg_decade.csv"), pd.read_csv(d / "agg_state.csv"),
+            pd.read_csv(d / "agg_infra.csv"), json.loads((d / "agg_meta.json").read_text()))
+
+
+@st.cache_data
 def load_metrics():
     return json.loads((ROOT / "models" / "metrics.json").read_text(encoding="utf-8"))
 
@@ -51,8 +58,9 @@ try:
     clf, reg = load_models()
     data = load_data()
     metrics = load_metrics()
+    agg_heat, agg_dec, agg_state, agg_infra, agg_meta = load_agg()
 except FileNotFoundError as e:
-    st.error(f"Missing file: {e.filename}\n\nRun Steps 1-3 and `python scripts/make_app_sample.py` first.")
+    st.error(f"Missing file: {e.filename}\n\nRun Steps 1-3, `python scripts/make_app_sample.py` and `python scripts/make_app_aggregates.py` first.")
     st.stop()
 
 CITY_STATE = data.drop_duplicates("City").set_index("City")["State"].to_dict()
@@ -97,7 +105,8 @@ st.caption("Predicts whether a property is a Good Investment and its estimated p
 with st.sidebar:
     st.header("About")
     st.write(f"**Classifier:** {clf['model_name']}  \n**Regressor:** {reg['model_name']}")
-    st.write(f"Explore/insight tabs use a {len(data):,}-row sample of the 250,000-row dataset.")
+    st.write(f"Models were trained on all {agg_meta['rows']:,} properties. **Market insights** use all of them; "
+             f"**Explore** uses a random sample of {len(data):,} to keep the app fast.")
     st.warning("The dataset appears synthetic and both targets are computed from the inputs, so treat results as a "
                "modelling demo, not financial advice.")
 
@@ -157,7 +166,12 @@ with tab_pred:
         with r1:
             st.markdown("### Is this a Good Investment?")
             (st.success if good else st.error)(f"**{'YES - Good Investment' if good else 'NO - Not a Good Investment'}**")
-            st.metric("Model confidence", f"{max(p, 1 - p):.1%}")
+            st.metric("Model confidence", f"{max(p, 1 - p):.1%}",
+                      help="How clearly this property meets the investment rule the model learned. It is not a "
+                           "real-world guarantee. Values near 50% mean the property sits right on a threshold.")
+            if 0.2 < p < 0.8:
+                st.warning("Borderline: this property is very close to the decision threshold (for example, priced "
+                           "almost exactly at its city/BHK median).")
             st.plotly_chart(gauge(p), width="stretch")
         with r2:
             st.markdown("### Estimated price after 5 years")
@@ -245,42 +259,41 @@ with tab_explore:
 # ================================================================== TAB 3: INSIGHTS
 with tab_insights:
     st.subheader("Location-wise heatmap")
+    st.caption(f"Computed from all {agg_meta['rows']:,} properties.")
     h1, h2 = st.columns(2)
     metric = h1.selectbox("Metric", ["Average price per sqft (₹)", "Good-investment rate", "Average 5-year price (lakhs)"])
     across = h2.selectbox("Compare across", ["BHK", "Property_Type", "Furnished_Status", "Availability_Status"])
-    col, fmt = {"Average price per sqft (₹)": ("Price_per_SqFt", ".0f"), "Good-investment rate": ("Good_Investment", ".2f"),
-                "Average 5-year price (lakhs)": ("Future_Price_5Y", ".0f")}[metric]
-    pv = data.pivot_table(index="City", columns=across, values=col, aggfunc="mean")
-    fig = px.imshow(pv, aspect="auto", color_continuous_scale="YlGnBu", text_auto=fmt, labels={"color": metric})
+    col, fmt = {"Average price per sqft (₹)": ("avg_pps", ".0f"), "Good-investment rate": ("good_rate", ".2f"),
+                "Average 5-year price (lakhs)": ("avg_future_price", ".0f")}[metric]
+    pv = agg_heat[agg_heat["Dimension"] == across].pivot(index="City", columns="Category", values=col)
+    pv = pv[sorted(pv.columns)]
+    fig = px.imshow(pv, aspect="auto", color_continuous_scale="YlGnBu", text_auto=fmt, labels={"color": metric, "x": across})
     fig.update_layout(height=900, margin=dict(t=20))
     st.plotly_chart(fig, width="stretch")
-    st.caption("Values are averages in the app sample. Differences between cities are small because the data is synthetic.")
+    st.caption("Differences between cities are small because the dataset is synthetic.")
 
     st.subheader("Price trend by build decade")
     t1, t2 = st.columns([1, 3])
     mode = t1.radio("Group by", ["Property_Type", "City"])
+    tr = agg_dec
     if mode == "City":
-        defaults = [c for c in ["Mumbai", "Delhi", "Bangalore"] if c in data["City"].unique()]
-        picks = t1.multiselect("Cities", sorted(data["City"].unique()), default=defaults)
-        tr = data[data["City"].isin(picks)]
-    else:
-        tr = data
-    tr = tr.groupby(["Build_Decade", mode])["Price_per_SqFt"].mean().reset_index()
-    t2.plotly_chart(px.line(tr, x="Build_Decade", y="Price_per_SqFt", color=mode, markers=True,
-                            labels={"Price_per_SqFt": "Avg price per sqft (₹)", "Build_Decade": "Decade built"}),
-                    width="stretch")
+        defaults = [c for c in ["Mumbai", "Delhi", "Bangalore"] if c in set(agg_dec["City"])]
+        picks = t1.multiselect("Cities", sorted(agg_dec["City"].unique()), default=defaults)
+        tr = agg_dec[agg_dec["City"].isin(picks)]
+    tr = tr.groupby(["Build_Decade", mode])[["n", "sum_pps"]].sum().reset_index()
+    tr["Avg price per sqft (₹)"] = tr["sum_pps"] / tr["n"]
+    t2.plotly_chart(px.line(tr, x="Build_Decade", y="Avg price per sqft (₹)", color=mode, markers=True,
+                            labels={"Build_Decade": "Decade built"}), width="stretch")
     st.caption("The dataset has no sale dates, so build decade is used as the time axis.")
 
     i1, i2 = st.columns(2)
-    sg = data.groupby("State")["Good_Investment"].mean().sort_values()
+    sg = agg_state.sort_values("good_rate").set_index("State")["good_rate"]
     i1.markdown("**Good-investment rate by state**")
     i1.plotly_chart(px.bar(sg, orientation="h", labels={"value": "rate", "State": ""}).update_layout(
         showlegend=False, height=500), width="stretch")
-    data["Infra_Band"] = pd.cut(data["Infrastructure_Score"], [-0.01, 0.35, 0.5, 0.65, 1.0], labels=["Low", "Mid", "High", "Top"])
-    ib = data.groupby("Infra_Band", observed=True).agg(Good_rate=("Good_Investment", "mean"),
-                                                         Future_Price=("Future_Price_5Y", "mean")).reset_index()
     i2.markdown("**Infrastructure score vs investment outcome**")
-    i2.plotly_chart(px.bar(ib, x="Infra_Band", y="Good_rate", labels={"Good_rate": "Good-investment rate", "Infra_Band": "Infrastructure band"}
+    i2.plotly_chart(px.bar(agg_infra, x="Infra_Band", y="good_rate",
+                           labels={"good_rate": "Good-investment rate", "Infra_Band": "Infrastructure band"}
                            ).update_layout(height=500), width="stretch")
 
 # ================================================================== TAB 4: MODEL

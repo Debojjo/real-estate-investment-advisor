@@ -1,0 +1,547 @@
+City,Dimension,Category,n,avg_pps,good_rate,avg_future_price
+Ahmedabad,BHK,1,1264,12534.8994,0.3054,365.2402
+Ahmedabad,BHK,2,1267,12615.9347,0.3402,363.5917
+Ahmedabad,BHK,3,1272,13069.0229,0.5637,371.6844
+Ahmedabad,BHK,4,1258,12687.1481,0.5541,366.5823
+Ahmedabad,BHK,5,1350,13147.8253,0.5896,364.5242
+Amritsar,BHK,1,1284,12763.9441,0.3139,358.9696
+Amritsar,BHK,2,1239,12831.5751,0.322,368.333
+Amritsar,BHK,3,1234,13277.9848,0.5697,374.8439
+Amritsar,BHK,4,1224,13023.7371,0.5784,369.0943
+Amritsar,BHK,5,1240,12785.4687,0.5677,354.8312
+Bangalore,BHK,1,839,13736.5944,0.3218,381.0227
+Bangalore,BHK,2,823,13310.9022,0.3293,374.7884
+Bangalore,BHK,3,802,12941.9828,0.5686,380.7883
+Bangalore,BHK,4,833,13297.8218,0.5654,364.4341
+Bangalore,BHK,5,847,12412.9327,0.5643,365.267
+Bhopal,BHK,1,1238,13135.3622,0.3417,371.7024
+Bhopal,BHK,2,1235,13077.7303,0.315,380.0467
+Bhopal,BHK,3,1255,13076.8862,0.5737,365.0211
+Bhopal,BHK,4,1259,12523.4769,0.5687,368.1852
+Bhopal,BHK,5,1297,12986.9998,0.5705,368.9857
+Bhubaneswar,BHK,1,1236,12481.8056,0.3091,361.8458
+Bhubaneswar,BHK,2,1293,13349.0695,0.3248,376.9692
+Bhubaneswar,BHK,3,1299,13325.8078,0.5535,371.2952
+Bhubaneswar,BHK,4,1217,13222.0791,0.5752,360.0774
+Bhubaneswar,BHK,5,1278,13267.0675,0.5493,369.7819
+Bilaspur,BHK,1,1210,12477.6722,0.3231,362.4766
+Bilaspur,BHK,2,1252,13170.8319,0.3123,368.2346
+Bilaspur,BHK,3,1275,13352.4645,0.56,366.929
+Bilaspur,BHK,4,1268,13166.1163,0.5718,358.3797
+Bilaspur,BHK,5,1258,12464.5307,0.5731,362.7699
+Chennai,BHK,1,1263,12635.4138,0.3135,361.1685
+Chennai,BHK,2,1232,13018.3518,0.3312,371.9238
+Chennai,BHK,3,1183,13210.4663,0.5647,368.5623
+Chennai,BHK,4,1257,13070.3118,0.5672,378.0775
+Chennai,BHK,5,1233,13875.7181,0.5499,374.5385
+Coimbatore,BHK,1,1236,13288.6519,0.322,367.9947
+Coimbatore,BHK,2,1301,13565.2311,0.3259,379.3885
+Coimbatore,BHK,3,1317,12654.2674,0.5657,365.0312
+Coimbatore,BHK,4,1345,12845.7974,0.548,372.478
+Coimbatore,BHK,5,1262,13208.9341,0.5713,367.1672
+Cuttack,BHK,1,1320,13048.7323,0.3083,359.8219
+Cuttack,BHK,2,1292,13382.1094,0.3104,365.4208
+Cuttack,BHK,3,1301,12379.656,0.5772,359.4332
+Cuttack,BHK,4,1236,13223.5921,0.5761,368.1278
+Cuttack,BHK,5,1209,12623.2232,0.5658,359.2051
+Dehradun,BHK,1,1238,12793.2924,0.3142,366.892
+Dehradun,BHK,2,1297,13201.1444,0.303,376.4035
+Dehradun,BHK,3,1225,13178.2516,0.5592,376.7009
+Dehradun,BHK,4,1248,12475.7192,0.5633,361.0032
+Dehradun,BHK,5,1226,13382.8665,0.5685,374.8178
+Durgapur,BHK,1,1311,13063.7762,0.3082,368.9144
+Durgapur,BHK,2,1259,13163.018,0.2899,364.6238
+Durgapur,BHK,3,1287,12981.6393,0.5703,362.6739
+Durgapur,BHK,4,1260,13353.2384,0.5714,366.3647
+Durgapur,BHK,5,1270,13374.4991,0.5693,371.8861
+Dwarka,BHK,1,1295,12971.3043,0.3197,368.5707
+Dwarka,BHK,2,1211,12913.384,0.3088,365.537
+Dwarka,BHK,3,1248,12727.7202,0.5737,367.7294
+Dwarka,BHK,4,1216,13047.7514,0.5551,370.3551
+Dwarka,BHK,5,1276,12872.1744,0.5627,359.0461
+Faridabad,BHK,1,1202,13361.6351,0.3195,370.7945
+Faridabad,BHK,2,1231,12796.5379,0.3103,366.0782
+Faridabad,BHK,3,1261,12624.1671,0.5654,363.5812
+Faridabad,BHK,4,1214,13501.1957,0.575,370.6633
+Faridabad,BHK,5,1261,12797.6503,0.5726,369.2612
+Gaya,BHK,1,1356,13372.8966,0.3171,369.3324
+Gaya,BHK,2,1259,13266.4171,0.3066,365.7103
+Gaya,BHK,3,1146,13090.935,0.5602,366.7014
+Gaya,BHK,4,1179,12814.5512,0.5674,374.3916
+Gaya,BHK,5,1230,13143.6444,0.5691,379.7458
+Gurgaon,BHK,1,1241,12906.2308,0.3127,366.0993
+Gurgaon,BHK,2,1221,13124.1508,0.3243,370.586
+Gurgaon,BHK,3,1239,13276.8276,0.5634,364.7229
+Gurgaon,BHK,4,1232,13486.8842,0.5657,366.063
+Gurgaon,BHK,5,1212,12838.9743,0.5734,367.6747
+Guwahati,BHK,1,1240,13193.5383,0.3194,358.0865
+Guwahati,BHK,2,1158,12731.1059,0.3238,370.533
+Guwahati,BHK,3,1272,12999.0495,0.5731,361.6138
+Guwahati,BHK,4,1188,12760.3428,0.5614,367.5722
+Guwahati,BHK,5,1234,13311.759,0.5794,371.2225
+Haridwar,BHK,1,1233,13512.3544,0.3228,375.6289
+Haridwar,BHK,2,1290,12958.6545,0.3256,364.2274
+Haridwar,BHK,3,1230,12592.2224,0.5659,362.9892
+Haridwar,BHK,4,1223,13215.2768,0.5699,367.361
+Haridwar,BHK,5,1291,12969.1449,0.5662,354.6594
+Hyderabad,BHK,1,1190,13301.9752,0.3168,377.8504
+Hyderabad,BHK,2,1312,12772.1485,0.3155,367.968
+Hyderabad,BHK,3,1256,13343.8815,0.5557,365.7498
+Hyderabad,BHK,4,1271,13405.3769,0.5728,374.0561
+Hyderabad,BHK,5,1244,13342.9933,0.5908,368.6098
+Indore,BHK,1,1264,12932.6,0.3331,366.3518
+Indore,BHK,2,1213,12941.6106,0.3322,370.8575
+Indore,BHK,3,1218,13202.3686,0.5755,371.1011
+Indore,BHK,4,1245,12761.1836,0.5775,359.0862
+Indore,BHK,5,1227,14078.3052,0.5615,376.7328
+Jaipur,BHK,1,1228,11947.7639,0.2956,363.3551
+Jaipur,BHK,2,1262,12594.2037,0.3051,368.3626
+Jaipur,BHK,3,1237,12963.7223,0.5683,370.4079
+Jaipur,BHK,4,1277,13756.2103,0.5623,372.5597
+Jaipur,BHK,5,1227,13357.986,0.5583,368.7551
+Jamshedpur,BHK,1,1274,12259.087,0.3014,361.9556
+Jamshedpur,BHK,2,1221,12854.2379,0.3161,370.1864
+Jamshedpur,BHK,3,1324,13321.7004,0.5612,358.3824
+Jamshedpur,BHK,4,1273,12916.8849,0.575,369.5003
+Jamshedpur,BHK,5,1243,12804.0563,0.5688,364.9328
+Jodhpur,BHK,1,1254,13062.5461,0.3285,375.5653
+Jodhpur,BHK,2,1233,12969.7667,0.3406,369.0006
+Jodhpur,BHK,3,1244,13069.2174,0.5732,367.4997
+Jodhpur,BHK,4,1181,12674.0412,0.5732,359.2067
+Jodhpur,BHK,5,1259,12889.3792,0.5751,364.4433
+Kochi,BHK,1,1270,12894.7406,0.3205,367.4673
+Kochi,BHK,2,1268,12986.6091,0.3155,367.7089
+Kochi,BHK,3,1207,13150.2877,0.5775,373.0826
+Kochi,BHK,4,1280,13457.3111,0.5523,373.9812
+Kochi,BHK,5,1280,13517.1811,0.5633,377.4716
+Kolkata,BHK,1,1254,13062.8856,0.315,369.543
+Kolkata,BHK,2,1267,11841.5211,0.3102,354.082
+Kolkata,BHK,3,1236,13082.3108,0.5752,367.8861
+Kolkata,BHK,4,1201,13155.8965,0.5587,372.762
+Kolkata,BHK,5,1277,13531.1686,0.5646,369.3007
+Lucknow,BHK,1,1280,13318.655,0.3172,372.0783
+Lucknow,BHK,2,1284,12829.5538,0.3154,367.2731
+Lucknow,BHK,3,1259,13205.6197,0.5679,370.1874
+Lucknow,BHK,4,1194,13187.021,0.5662,364.3756
+Lucknow,BHK,5,1220,13183.7337,0.5541,376.3163
+Ludhiana,BHK,1,1283,12488.3069,0.3219,361.4364
+Ludhiana,BHK,2,1202,12578.3379,0.3161,362.7789
+Ludhiana,BHK,3,1294,12923.517,0.5711,361.7868
+Ludhiana,BHK,4,1230,13461.9323,0.5577,373.7245
+Ludhiana,BHK,5,1286,13188.4421,0.556,368.5219
+Mangalore,BHK,1,826,12879.0204,0.2918,361.4843
+Mangalore,BHK,2,827,14039.4842,0.3132,372.3284
+Mangalore,BHK,3,783,13221.6901,0.5773,372.1659
+Mangalore,BHK,4,835,13480.6847,0.5629,371.2421
+Mangalore,BHK,5,792,13240.3716,0.5593,377.1569
+Mumbai,BHK,1,818,13900.1228,0.3191,367.1896
+Mumbai,BHK,2,810,12825.5677,0.3259,362.9994
+Mumbai,BHK,3,871,13517.084,0.5637,355.7912
+Mumbai,BHK,4,838,12949.5532,0.5776,375.0231
+Mumbai,BHK,5,812,12616.2765,0.569,360.7186
+Mysore,BHK,1,865,13996.2481,0.311,379.4144
+Mysore,BHK,2,832,12632.4412,0.3125,375.4048
+Mysore,BHK,3,834,13247.4542,0.5719,375.9912
+Mysore,BHK,4,862,13100.4304,0.5708,362.3783
+Mysore,BHK,5,824,13219.9774,0.5546,359.7404
+Nagpur,BHK,1,841,13208.2918,0.3187,368.7241
+Nagpur,BHK,2,803,13090.8854,0.2914,363.1104
+Nagpur,BHK,3,848,12528.0611,0.5755,376.8257
+Nagpur,BHK,4,815,12481.3749,0.5669,375.5483
+Nagpur,BHK,5,853,12433.7811,0.5862,362.1574
+New Delhi,BHK,1,1297,13117.1636,0.3254,366.7551
+New Delhi,BHK,2,1184,13298.7325,0.3209,363.7804
+New Delhi,BHK,3,1300,12239.8327,0.5569,359.438
+New Delhi,BHK,4,1281,12712.3911,0.566,361.2005
+New Delhi,BHK,5,1244,13564.0619,0.5571,367.5987
+Noida,BHK,1,1253,13224.5809,0.3416,373.586
+Noida,BHK,2,1257,13509.577,0.3126,371.6316
+Noida,BHK,3,1251,13069.3702,0.5715,371.7803
+Noida,BHK,4,1193,12699.325,0.5658,366.3992
+Noida,BHK,5,1317,13180.1531,0.5664,368.6532
+Patna,BHK,1,1250,13116.0939,0.3192,363.2739
+Patna,BHK,2,1210,12991.0498,0.3091,363.3222
+Patna,BHK,3,1189,12952.4811,0.5702,360.9804
+Patna,BHK,4,1266,13263.5267,0.5687,374.1993
+Patna,BHK,5,1284,12463.7081,0.5545,361.4447
+Pune,BHK,1,902,13793.5907,0.3049,373.8959
+Pune,BHK,2,814,12319.6145,0.3022,360.7962
+Pune,BHK,3,842,13916.9116,0.5594,373.4071
+Pune,BHK,4,832,13224.0683,0.5493,370.8601
+Pune,BHK,5,834,13149.5434,0.5492,373.3768
+Raipur,BHK,1,1206,13921.4186,0.3184,379.3816
+Raipur,BHK,2,1279,12794.136,0.3081,366.1775
+Raipur,BHK,3,1249,12720.1114,0.5653,360.6231
+Raipur,BHK,4,1240,13124.6374,0.5629,356.8381
+Raipur,BHK,5,1219,13095.7822,0.5808,368.9539
+Ranchi,BHK,1,1234,13451.5112,0.3217,366.7237
+Ranchi,BHK,2,1216,13127.6082,0.3051,367.1394
+Ranchi,BHK,3,1205,12967.9284,0.5535,367.314
+Ranchi,BHK,4,1240,13034.2649,0.5718,359.7906
+Ranchi,BHK,5,1250,13018.3303,0.5896,378.7916
+Silchar,BHK,1,1241,13480.8204,0.3062,367.1591
+Silchar,BHK,2,1255,12859.3603,0.3259,367.5316
+Silchar,BHK,3,1324,13435.1394,0.5785,365.8588
+Silchar,BHK,4,1248,12898.3215,0.5817,366.9409
+Silchar,BHK,5,1336,13114.6047,0.5516,356.6257
+Surat,BHK,1,1269,13211.9841,0.3152,377.5826
+Surat,BHK,2,1182,14277.8704,0.2986,375.6173
+Surat,BHK,3,1268,12854.8519,0.5702,366.6249
+Surat,BHK,4,1248,13515.8848,0.5513,373.3561
+Surat,BHK,5,1200,13073.2607,0.5492,368.0038
+Trivandrum,BHK,1,1270,12550.2245,0.3142,360.9206
+Trivandrum,BHK,2,1203,12461.9381,0.3034,367.0842
+Trivandrum,BHK,3,1299,12699.065,0.5666,357.6741
+Trivandrum,BHK,4,1185,13353.4195,0.5595,367.7078
+Trivandrum,BHK,5,1225,12747.3263,0.5706,361.021
+Vijayawada,BHK,1,1204,13122.9689,0.2957,368.249
+Vijayawada,BHK,2,1288,13077.7926,0.3168,360.8277
+Vijayawada,BHK,3,1292,13649.4533,0.5611,365.7957
+Vijayawada,BHK,4,1335,13193.1977,0.57,376.2045
+Vijayawada,BHK,5,1225,12728.6872,0.5567,368.4688
+Vishakhapatnam,BHK,1,1162,13780.5081,0.3244,375.9916
+Vishakhapatnam,BHK,2,1255,13086.5092,0.3243,368.4573
+Vishakhapatnam,BHK,3,1189,13345.3349,0.5669,369.5793
+Vishakhapatnam,BHK,4,1315,12927.5762,0.5787,364.428
+Vishakhapatnam,BHK,5,1197,13140.589,0.5806,371.4785
+Warangal,BHK,1,1255,12727.9713,0.3283,373.1873
+Warangal,BHK,2,1278,12890.928,0.3052,361.8932
+Warangal,BHK,3,1202,13270.9499,0.5582,371.3826
+Warangal,BHK,4,1246,13093.4287,0.5843,372.0966
+Warangal,BHK,5,1285,12822.4293,0.5735,359.6102
+Ahmedabad,Property_Type,Apartment,2049,12664.2756,0.469,367.8342
+Ahmedabad,Property_Type,Independent House,2173,13009.6281,0.4648,367.1863
+Ahmedabad,Property_Type,Villa,2189,12765.3143,0.4824,364.0004
+Amritsar,Property_Type,Apartment,2057,13043.4794,0.473,362.9632
+Amritsar,Property_Type,Independent House,2070,12852.3279,0.4614,370.4464
+Amritsar,Property_Type,Villa,2094,12909.5218,0.4723,362.0639
+Bangalore,Property_Type,Apartment,1386,13717.5798,0.4646,376.3016
+Bangalore,Property_Type,Independent House,1377,13010.3698,0.4575,376.3851
+Bangalore,Property_Type,Villa,1381,12688.1536,0.4866,366.8644
+Bhopal,Property_Type,Apartment,2124,12956.8333,0.4713,373.6938
+Bhopal,Property_Type,Independent House,2074,12795.7951,0.4759,370.3207
+Bhopal,Property_Type,Villa,2086,13123.9072,0.4794,368.157
+Bhubaneswar,Property_Type,Apartment,2149,12913.2222,0.4597,368.3775
+Bhubaneswar,Property_Type,Independent House,1966,13140.2075,0.4547,372.5645
+Bhubaneswar,Property_Type,Villa,2208,13342.6191,0.4715,363.979
+Bilaspur,Property_Type,Apartment,2087,13461.8261,0.46,364.7824
+Bilaspur,Property_Type,Independent House,2090,12730.8493,0.4665,365.9291
+Bilaspur,Property_Type,Villa,2086,12600.6549,0.4827,360.5744
+Chennai,Property_Type,Apartment,2067,12960.2881,0.4702,365.0693
+Chennai,Property_Type,Independent House,2025,13347.8039,0.4563,378.1088
+Chennai,Property_Type,Villa,2076,13171.9858,0.4658,369.5357
+Coimbatore,Property_Type,Apartment,2169,12928.0405,0.4578,375.2838
+Coimbatore,Property_Type,Independent House,2134,13176.259,0.4742,368.2818
+Coimbatore,Property_Type,Villa,2158,13219.1962,0.4727,367.7553
+Cuttack,Property_Type,Apartment,2192,12793.9194,0.469,356.9521
+Cuttack,Property_Type,Independent House,2069,12959.3693,0.4592,361.4406
+Cuttack,Property_Type,Villa,2097,13051.2994,0.4659,368.9731
+Dehradun,Property_Type,Apartment,2087,12928.8698,0.4562,368.2368
+Dehradun,Property_Type,Independent House,2071,13002.7716,0.4621,373.3102
+Dehradun,Property_Type,Villa,2076,13087.254,0.4615,372.0083
+Durgapur,Property_Type,Apartment,2151,12964.3248,0.47,365.6915
+Durgapur,Property_Type,Independent House,2094,13499.4004,0.4556,368.6211
+Durgapur,Property_Type,Villa,2142,13101.2639,0.458,366.4283
+Dwarka,Property_Type,Apartment,1988,12678.8655,0.4764,365.6904
+Dwarka,Property_Type,Independent House,2074,13041.311,0.4711,366.8787
+Dwarka,Property_Type,Villa,2184,12984.3583,0.4455,366.0652
+Faridabad,Property_Type,Apartment,2011,13066.6764,0.4585,369.974
+Faridabad,Property_Type,Independent House,2124,13436.0231,0.4699,372.7172
+Faridabad,Property_Type,Villa,2034,12510.0234,0.4813,361.2428
+Gaya,Property_Type,Apartment,2085,13526.3028,0.4619,374.1854
+Gaya,Property_Type,Independent House,2044,12879.3336,0.4535,368.3538
+Gaya,Property_Type,Villa,2041,13025.7803,0.4591,370.8413
+Gurgaon,Property_Type,Apartment,2090,13129.2467,0.4589,372.3912
+Gurgaon,Property_Type,Independent House,2001,12979.1025,0.4843,363.3117
+Gurgaon,Property_Type,Villa,2054,13269.9993,0.4606,365.1574
+Guwahati,Property_Type,Apartment,2004,12906.4813,0.4661,366.0492
+Guwahati,Property_Type,Independent House,2052,13235.7626,0.4639,367.8881
+Guwahati,Property_Type,Villa,2036,12867.8898,0.4892,363.1496
+Haridwar,Property_Type,Apartment,2026,13309.7493,0.4664,366.9862
+Haridwar,Property_Type,Independent House,2066,13168.2301,0.4792,365.3576
+Haridwar,Property_Type,Villa,2175,12689.731,0.463,362.4301
+Hyderabad,Property_Type,Apartment,2073,13479.2222,0.4699,369.6053
+Hyderabad,Property_Type,Independent House,2120,12953.1086,0.4698,376.3803
+Hyderabad,Property_Type,Villa,2080,13259.7231,0.4721,366.1806
+Indore,Property_Type,Apartment,2038,12718.8565,0.4701,369.5498
+Indore,Property_Type,Independent House,2069,13532.2426,0.479,368.9953
+Indore,Property_Type,Villa,2060,13285.427,0.4777,367.7863
+Jaipur,Property_Type,Apartment,1987,12827.1166,0.4615,367.4195
+Jaipur,Property_Type,Independent House,2163,12742.0974,0.4702,363.2488
+Jaipur,Property_Type,Villa,2081,13219.6808,0.4421,375.6462
+Jamshedpur,Property_Type,Apartment,2085,12966.6232,0.4681,363.6625
+Jamshedpur,Property_Type,Independent House,2116,13036.7293,0.4608,373.2143
+Jamshedpur,Property_Type,Villa,2134,12506.3452,0.4691,357.8514
+Jodhpur,Property_Type,Apartment,2112,13292.4858,0.4792,370.1161
+Jodhpur,Property_Type,Independent House,1998,12710.8057,0.4785,365.5024
+Jodhpur,Property_Type,Villa,2061,12788.0217,0.4745,365.9411
+Kochi,Property_Type,Apartment,2113,13051.4913,0.4524,372.8613
+Kochi,Property_Type,Independent House,2094,13266.9257,0.4604,375.7695
+Kochi,Property_Type,Villa,2098,13290.9174,0.4824,367.2028
+Kolkata,Property_Type,Apartment,2103,12846.1471,0.4779,363.4616
+Kolkata,Property_Type,Independent House,2030,13096.4591,0.4567,369.4051
+Kolkata,Property_Type,Villa,2102,12860.1696,0.4562,367.1589
+Lucknow,Property_Type,Apartment,2056,13172.7769,0.4601,367.8336
+Lucknow,Property_Type,Independent House,2098,13427.5705,0.4671,370.9002
+Lucknow,Property_Type,Villa,2083,12828.6543,0.457,371.4164
+Ludhiana,Property_Type,Apartment,2035,12698.9876,0.4614,363.587
+Ludhiana,Property_Type,Independent House,2111,13221.5883,0.4552,368.0711
+Ludhiana,Property_Type,Villa,2149,12857.139,0.4807,365.1177
+Mangalore,Property_Type,Apartment,1308,13733.4686,0.4717,379.4324
+Mangalore,Property_Type,Independent House,1383,13488.727,0.4425,368.7559
+Mangalore,Property_Type,Villa,1372,12919.6555,0.4636,364.6618
+Mumbai,Property_Type,Apartment,1402,13004.4485,0.4629,367.776
+Mumbai,Property_Type,Independent House,1382,12955.7324,0.4783,361.4944
+Mumbai,Property_Type,Villa,1365,13546.8671,0.4777,363.5534
+Mysore,Property_Type,Apartment,1409,12623.1785,0.4776,368.0047
+Mysore,Property_Type,Independent House,1418,13463.5322,0.457,373.8282
+Mysore,Property_Type,Villa,1390,13650.2214,0.4561,369.9972
+Nagpur,Property_Type,Apartment,1325,12757.7782,0.4687,369.2595
+Nagpur,Property_Type,Independent House,1437,12918.0105,0.4642,372.2867
+Nagpur,Property_Type,Villa,1398,12557.2596,0.475,366.216
+New Delhi,Property_Type,Apartment,2088,12932.324,0.4646,361.49
+New Delhi,Property_Type,Independent House,2079,12750.5235,0.4671,358.6603
+New Delhi,Property_Type,Villa,2139,13238.7463,0.4689,370.8328
+Noida,Property_Type,Apartment,2078,13384.9726,0.4735,370.9804
+Noida,Property_Type,Independent House,2137,13179.514,0.4591,373.9069
+Noida,Property_Type,Villa,2056,12855.8766,0.4825,366.2624
+Patna,Property_Type,Apartment,2064,13359.0503,0.4704,365.7989
+Patna,Property_Type,Independent House,2029,12664.4377,0.4623,362.6921
+Patna,Property_Type,Villa,2106,12839.7863,0.4625,365.5451
+Pune,Property_Type,Apartment,1355,13156.7754,0.4413,371.1828
+Pune,Property_Type,Independent House,1428,13801.1365,0.4461,375.8165
+Pune,Property_Type,Villa,1441,12922.7724,0.4663,364.8051
+Raipur,Property_Type,Apartment,2047,13004.5138,0.4773,363.3854
+Raipur,Property_Type,Independent House,2066,13031.8113,0.4564,362.1883
+Raipur,Property_Type,Villa,2080,13333.989,0.4663,373.2676
+Ranchi,Property_Type,Apartment,2091,13213.134,0.4768,368.3343
+Ranchi,Property_Type,Independent House,2036,13050.8715,0.4764,366.2789
+Ranchi,Property_Type,Villa,2018,13094.0802,0.4529,369.3216
+Silchar,Property_Type,Apartment,2183,13076.902,0.4787,362.3582
+Silchar,Property_Type,Independent House,2100,12973.7133,0.4695,366.4558
+Silchar,Property_Type,Villa,2121,13428.9778,0.4653,365.442
+Surat,Property_Type,Apartment,2037,13028.8242,0.4477,374.9946
+Surat,Property_Type,Independent House,2095,13555.7999,0.4501,371.7041
+Surat,Property_Type,Villa,2035,13542.5181,0.4757,370.0154
+Trivandrum,Property_Type,Apartment,2014,12821.4576,0.4578,366.0636
+Trivandrum,Property_Type,Independent House,2096,13011.6492,0.4485,366.0724
+Trivandrum,Property_Type,Villa,2072,12437.7542,0.4826,356.1945
+Vijayawada,Property_Type,Apartment,2106,12698.7718,0.471,363.3701
+Vijayawada,Property_Type,Independent House,2111,13396.9973,0.4571,370.2558
+Vijayawada,Property_Type,Villa,2127,13380.4565,0.4584,370.2237
+Vishakhapatnam,Property_Type,Apartment,2062,13597.4319,0.4724,370.2759
+Vishakhapatnam,Property_Type,Independent House,2070,13297.1032,0.4884,374.5469
+Vishakhapatnam,Property_Type,Villa,1986,12824.9055,0.4678,364.4549
+Warangal,Property_Type,Apartment,2063,12833.8673,0.4755,364.1778
+Warangal,Property_Type,Independent House,2130,12801.4662,0.4737,366.222
+Warangal,Property_Type,Villa,2073,13240.5857,0.4573,372.2293
+Ahmedabad,Furnished_Status,Furnished,2079,12936.7359,0.4541,369.0343
+Ahmedabad,Furnished_Status,Semi-furnished,2164,12538.1972,0.4917,362.768
+Ahmedabad,Furnished_Status,Unfurnished,2168,12977.0125,0.47,367.2199
+Amritsar,Furnished_Status,Furnished,2049,12920.4698,0.4675,366.203
+Amritsar,Furnished_Status,Semi-furnished,2034,12695.3711,0.4685,360.1816
+Amritsar,Furnished_Status,Unfurnished,2138,13176.2708,0.4705,368.8689
+Bangalore,Furnished_Status,Furnished,1381,13079.9717,0.4649,373.7143
+Bangalore,Furnished_Status,Semi-furnished,1383,13576.278,0.4649,370.7303
+Bangalore,Furnished_Status,Unfurnished,1380,12761.4142,0.479,375.1134
+Bhopal,Furnished_Status,Furnished,2101,12901.3847,0.4855,366.6003
+Bhopal,Furnished_Status,Semi-furnished,2121,13184.4915,0.4767,371.6655
+Bhopal,Furnished_Status,Unfurnished,2062,12786.2016,0.4641,374.0138
+Bhubaneswar,Furnished_Status,Furnished,2156,12934.6844,0.4643,367.8324
+Bhubaneswar,Furnished_Status,Semi-furnished,2130,13357.3561,0.4559,367.3193
+Bhubaneswar,Furnished_Status,Unfurnished,2037,13110.6124,0.4669,369.3342
+Bilaspur,Furnished_Status,Furnished,2082,13168.1197,0.4721,365.5021
+Bilaspur,Furnished_Status,Semi-furnished,2078,12947.5162,0.4649,365.4158
+Bilaspur,Furnished_Status,Unfurnished,2103,12680.1276,0.4722,360.4097
+Chennai,Furnished_Status,Furnished,2083,13204.2692,0.4561,370.5913
+Chennai,Furnished_Status,Semi-furnished,2020,13117.0509,0.4668,377.1649
+Chennai,Furnished_Status,Unfurnished,2065,13153.6684,0.4697,364.9442
+Coimbatore,Furnished_Status,Furnished,2155,12982.0996,0.4738,363.7831
+Coimbatore,Furnished_Status,Semi-furnished,2130,13162.3755,0.4667,369.2374
+Coimbatore,Furnished_Status,Unfurnished,2176,13177.2967,0.4642,378.259
+Cuttack,Furnished_Status,Furnished,2089,12638.1251,0.472,356.1415
+Cuttack,Furnished_Status,Semi-furnished,2168,13025.3564,0.4576,361.4946
+Cuttack,Furnished_Status,Unfurnished,2101,13129.8264,0.465,369.4889
+Dehradun,Furnished_Status,Furnished,2120,12949.0553,0.4689,367.7904
+Dehradun,Furnished_Status,Semi-furnished,2059,13365.3365,0.4541,373.4198
+Dehradun,Furnished_Status,Unfurnished,2055,12705.2093,0.4564,372.4271
+Durgapur,Furnished_Status,Furnished,2064,13492.7423,0.453,370.1663
+Durgapur,Furnished_Status,Semi-furnished,2107,12976.8681,0.4656,370.8669
+Durgapur,Furnished_Status,Unfurnished,2216,13098.2099,0.4648,360.0833
+Dwarka,Furnished_Status,Furnished,2041,12960.6574,0.4689,364.8926
+Dwarka,Furnished_Status,Semi-furnished,2124,12820.3271,0.4562,361.555
+Dwarka,Furnished_Status,Unfurnished,2081,12939.945,0.4666,372.2713
+Faridabad,Furnished_Status,Furnished,2031,12711.2547,0.4776,367.4797
+Faridabad,Furnished_Status,Semi-furnished,2057,13401.7093,0.4521,373.4546
+Faridabad,Furnished_Status,Unfurnished,2081,12915.2872,0.4801,363.2338
+Gaya,Furnished_Status,Furnished,2096,12964.2746,0.4623,369.8547
+Gaya,Furnished_Status,Semi-furnished,2045,13293.3564,0.4538,372.7333
+Gaya,Furnished_Status,Unfurnished,2029,13186.4384,0.4584,370.8841
+Gurgaon,Furnished_Status,Furnished,2102,12956.588,0.4843,361.4272
+Gurgaon,Furnished_Status,Semi-furnished,2032,13427.2837,0.4532,372.3682
+Gurgaon,Furnished_Status,Unfurnished,2011,13002.9338,0.4649,367.4518
+Guwahati,Furnished_Status,Furnished,1973,13162.6769,0.4714,367.1826
+Guwahati,Furnished_Status,Semi-furnished,2046,13140.0133,0.4741,364.6225
+Guwahati,Furnished_Status,Unfurnished,2073,12720.197,0.4737,365.3511
+Haridwar,Furnished_Status,Furnished,2084,12959.5407,0.4731,364.3891
+Haridwar,Furnished_Status,Semi-furnished,2053,13220.5976,0.4637,364.2371
+Haridwar,Furnished_Status,Unfurnished,2130,12967.9394,0.4714,365.945
+Hyderabad,Furnished_Status,Furnished,2052,12640.5572,0.4849,366.077
+Hyderabad,Furnished_Status,Semi-furnished,2089,13337.2204,0.4653,370.5221
+Hyderabad,Furnished_Status,Unfurnished,2132,13688.2576,0.462,375.4986
+Indore,Furnished_Status,Furnished,2026,12948.0564,0.4758,368.07
+Indore,Furnished_Status,Semi-furnished,2083,13244.6755,0.4873,363.8169
+Indore,Furnished_Status,Unfurnished,2058,13345.8686,0.4636,374.4864
+Jaipur,Furnished_Status,Furnished,2081,13071.8537,0.4301,376.0146
+Jaipur,Furnished_Status,Semi-furnished,2022,13064.0168,0.4891,361.2061
+Jaipur,Furnished_Status,Unfurnished,2128,12660.1616,0.4558,368.7238
+Jamshedpur,Furnished_Status,Furnished,2159,12635.9925,0.4771,360.126
+Jamshedpur,Furnished_Status,Semi-furnished,2083,12511.1668,0.4575,365.3685
+Jamshedpur,Furnished_Status,Unfurnished,2093,13362.5422,0.463,369.3446
+Jodhpur,Furnished_Status,Furnished,2095,12650.2829,0.4883,366.8238
+Jodhpur,Furnished_Status,Semi-furnished,2104,12773.9482,0.4729,361.0351
+Jodhpur,Furnished_Status,Unfurnished,1972,13411.4112,0.4706,374.2646
+Kochi,Furnished_Status,Furnished,2062,13065.1078,0.4767,366.6854
+Kochi,Furnished_Status,Semi-furnished,2122,13077.8278,0.4642,373.6407
+Kochi,Furnished_Status,Unfurnished,2121,13461.4263,0.4545,375.3596
+Kolkata,Furnished_Status,Furnished,2082,13207.6517,0.4529,367.1078
+Kolkata,Furnished_Status,Semi-furnished,2151,12664.6355,0.4761,366.648
+Kolkata,Furnished_Status,Unfurnished,2002,12933.7532,0.4615,366.1548
+Lucknow,Furnished_Status,Furnished,2089,12768.293,0.4543,373.6926
+Lucknow,Furnished_Status,Semi-furnished,2026,13656.7156,0.4521,375.5312
+Lucknow,Furnished_Status,Unfurnished,2122,13023.0392,0.4774,361.2654
+Ludhiana,Furnished_Status,Furnished,2043,13073.6735,0.4586,366.7445
+Ludhiana,Furnished_Status,Semi-furnished,2158,13049.1913,0.4676,373.5231
+Ludhiana,Furnished_Status,Unfurnished,2094,12661.6688,0.4713,356.358
+Mangalore,Furnished_Status,Furnished,1338,13601.1109,0.4679,371.8678
+Mangalore,Furnished_Status,Semi-furnished,1400,13358.7705,0.4443,372.6568
+Mangalore,Furnished_Status,Unfurnished,1325,13164.897,0.4657,367.792
+Mumbai,Furnished_Status,Furnished,1435,13071.7529,0.4801,360.5321
+Mumbai,Furnished_Status,Semi-furnished,1335,13045.3978,0.4787,361.8517
+Mumbai,Furnished_Status,Unfurnished,1379,13382.858,0.4598,370.5744
+Mysore,Furnished_Status,Furnished,1367,13107.4801,0.4418,372.4674
+Mysore,Furnished_Status,Semi-furnished,1423,13466.4731,0.4779,375.0215
+Mysore,Furnished_Status,Unfurnished,1427,13153.776,0.4702,364.4601
+Nagpur,Furnished_Status,Furnished,1377,12642.671,0.4655,368.8731
+Nagpur,Furnished_Status,Semi-furnished,1383,12907.721,0.4895,366.7946
+Nagpur,Furnished_Status,Unfurnished,1400,12687.1071,0.4529,372.1426
+New Delhi,Furnished_Status,Furnished,2064,13038.5816,0.4632,359.5595
+New Delhi,Furnished_Status,Semi-furnished,2115,13022.0458,0.4624,364.1975
+New Delhi,Furnished_Status,Unfurnished,2127,12870.4512,0.4748,367.3007
+Noida,Furnished_Status,Furnished,2135,13576.9837,0.467,376.373
+Noida,Furnished_Status,Semi-furnished,2073,12796.2415,0.467,365.2237
+Noida,Furnished_Status,Unfurnished,2063,13037.7159,0.4809,369.5136
+Patna,Furnished_Status,Furnished,2098,12996.26,0.4733,362.0205
+Patna,Furnished_Status,Semi-furnished,2056,12680.0501,0.4708,364.9151
+Patna,Furnished_Status,Unfurnished,2045,13189.9645,0.4509,367.2198
+Pune,Furnished_Status,Furnished,1402,13219.6046,0.4437,374.8437
+Pune,Furnished_Status,Semi-furnished,1410,13508.8506,0.4468,369.2907
+Pune,Furnished_Status,Unfurnished,1412,13155.6683,0.4639,367.6148
+Raipur,Furnished_Status,Furnished,2031,12864.2971,0.4697,365.4908
+Raipur,Furnished_Status,Semi-furnished,2092,13189.4136,0.4656,362.8119
+Raipur,Furnished_Status,Unfurnished,2070,13313.5354,0.4647,370.6344
+Ranchi,Furnished_Status,Furnished,2016,13158.0636,0.4772,369.6982
+Ranchi,Furnished_Status,Semi-furnished,2135,13025.373,0.4768,362.944
+Ranchi,Furnished_Status,Unfurnished,1994,13183.683,0.4519,371.6274
+Silchar,Furnished_Status,Furnished,2202,13171.6244,0.4755,366.4517
+Silchar,Furnished_Status,Semi-furnished,2077,13379.7965,0.4598,366.0236
+Silchar,Furnished_Status,Unfurnished,2125,12932.133,0.4781,361.6612
+Surat,Furnished_Status,Furnished,2035,13029.0713,0.4698,368.2752
+Surat,Furnished_Status,Semi-furnished,2048,13480.7763,0.4619,370.7563
+Surat,Furnished_Status,Unfurnished,2084,13615.811,0.4419,377.5511
+Trivandrum,Furnished_Status,Furnished,2081,13071.3437,0.47,363.9641
+Trivandrum,Furnished_Status,Semi-furnished,2019,12609.0619,0.4581,360.2102
+Trivandrum,Furnished_Status,Unfurnished,2082,12587.2704,0.4606,364.0255
+Vijayawada,Furnished_Status,Furnished,2138,13191.649,0.4645,369.7575
+Vijayawada,Furnished_Status,Semi-furnished,2080,13322.4494,0.4505,370.4901
+Vijayawada,Furnished_Status,Unfurnished,2126,12968.234,0.4713,363.6745
+Vishakhapatnam,Furnished_Status,Furnished,2091,13622.3965,0.4687,378.3461
+Vishakhapatnam,Furnished_Status,Semi-furnished,2039,13044.3304,0.4747,362.4492
+Vishakhapatnam,Furnished_Status,Unfurnished,1988,13053.9988,0.4859,368.4472
+Warangal,Furnished_Status,Furnished,2033,13254.6893,0.4619,368.8275
+Warangal,Furnished_Status,Semi-furnished,2100,12924.3358,0.4838,368.7018
+Warangal,Furnished_Status,Unfurnished,2133,12706.6277,0.4609,365.1583
+Ahmedabad,Availability_Status,Ready_to_Move,3211,13118.7256,0.5889,376.437
+Ahmedabad,Availability_Status,Under_Construction,3200,12511.8962,0.355,356.1393
+Amritsar,Availability_Status,Ready_to_Move,3119,13070.2533,0.5928,375.5163
+Amritsar,Availability_Status,Under_Construction,3102,12798.5733,0.3443,354.7278
+Bangalore,Availability_Status,Ready_to_Move,2060,13310.5411,0.6015,383.0946
+Bangalore,Availability_Status,Under_Construction,2084,12970.4752,0.3393,363.3882
+Bhopal,Availability_Status,Ready_to_Move,3132,12975.1899,0.6031,378.7377
+Bhopal,Availability_Status,Under_Construction,3152,12943.2007,0.3487,362.7982
+Bhubaneswar,Availability_Status,Ready_to_Move,3124,13161.9157,0.5887,378.2814
+Bhubaneswar,Availability_Status,Under_Construction,3199,13106.2334,0.3389,358.243
+Bilaspur,Availability_Status,Ready_to_Move,3133,12862.574,0.5889,371.903
+Bilaspur,Availability_Status,Under_Construction,3130,12999.6255,0.3505,355.6163
+Chennai,Availability_Status,Ready_to_Move,3116,12761.2668,0.5915,376.4873
+Chennai,Availability_Status,Under_Construction,3052,13564.5982,0.3342,365.1016
+Coimbatore,Availability_Status,Ready_to_Move,3267,13083.4996,0.6002,373.8644
+Coimbatore,Availability_Status,Under_Construction,3194,13131.587,0.3331,366.9709
+Cuttack,Availability_Status,Ready_to_Move,3181,13044.0778,0.596,370.9461
+Cuttack,Availability_Status,Under_Construction,3177,12821.0796,0.3333,353.798
+Dehradun,Availability_Status,Ready_to_Move,3105,12836.9312,0.5923,377.1707
+Dehradun,Availability_Status,Under_Construction,3129,13174.1,0.3285,365.2316
+Durgapur,Availability_Status,Ready_to_Move,3132,13544.06,0.5894,378.2168
+Durgapur,Availability_Status,Under_Construction,3255,12840.8351,0.3379,356.009
+Dwarka,Availability_Status,Ready_to_Move,3137,12944.5764,0.5869,376.0955
+Dwarka,Availability_Status,Under_Construction,3109,12867.1489,0.3397,356.2476
+Faridabad,Availability_Status,Ready_to_Move,3106,12859.9479,0.5985,372.3845
+Faridabad,Availability_Status,Under_Construction,3063,13162.7779,0.3395,363.6339
+Gaya,Availability_Status,Ready_to_Move,3088,13108.2447,0.579,381.6495
+Gaya,Availability_Status,Under_Construction,3082,13184.639,0.3371,360.6247
+Gurgaon,Availability_Status,Ready_to_Move,3064,13126.5024,0.5839,377.27
+Gurgaon,Availability_Status,Under_Construction,3081,13128.2976,0.3522,356.82
+Guwahati,Availability_Status,Ready_to_Move,3091,12915.8833,0.595,372.4859
+Guwahati,Availability_Status,Under_Construction,3001,13095.7687,0.3476,358.7097
+Haridwar,Availability_Status,Ready_to_Move,3186,12875.9175,0.5882,373.9848
+Haridwar,Availability_Status,Under_Construction,3081,13225.7732,0.3466,355.4407
+Hyderabad,Availability_Status,Ready_to_Move,3113,13373.7166,0.5969,382.8439
+Hyderabad,Availability_Status,Under_Construction,3160,13085.7159,0.3462,358.8546
+Indore,Availability_Status,Ready_to_Move,3135,12943.1022,0.5987,375.0122
+Indore,Availability_Status,Under_Construction,3032,13426.9769,0.3483,362.3252
+Jaipur,Availability_Status,Ready_to_Move,3104,12960.4978,0.5854,376.8228
+Jaipur,Availability_Status,Under_Construction,3127,12897.1564,0.3316,360.6752
+Jamshedpur,Availability_Status,Ready_to_Move,3169,12972.0498,0.5863,375.8047
+Jamshedpur,Availability_Status,Under_Construction,3166,12697.8027,0.3455,353.9759
+Jodhpur,Availability_Status,Ready_to_Move,3158,12868.3192,0.5921,377.4236
+Jodhpur,Availability_Status,Under_Construction,3013,13006.2664,0.3571,356.5416
+Kochi,Availability_Status,Ready_to_Move,3148,13032.2467,0.5928,382.0968
+Kochi,Availability_Status,Under_Construction,3157,13372.6879,0.3377,361.8207
+Kolkata,Availability_Status,Ready_to_Move,3138,13111.1952,0.5895,375.3104
+Kolkata,Availability_Status,Under_Construction,3097,12751.1803,0.3361,357.8611
+Lucknow,Availability_Status,Ready_to_Move,3160,13183.0512,0.5899,377.974
+Lucknow,Availability_Status,Under_Construction,3077,13102.9955,0.3295,361.936
+Ludhiana,Availability_Status,Ready_to_Move,3103,12722.783,0.5933,373.0893
+Ludhiana,Availability_Status,Under_Construction,3192,13127.9476,0.3421,358.3457
+Mangalore,Availability_Status,Ready_to_Move,2040,13456.9137,0.5838,383.3212
+Mangalore,Availability_Status,Under_Construction,2023,13293.1042,0.3332,358.1947
+Mumbai,Availability_Status,Ready_to_Move,2075,12994.108,0.6048,370.8348
+Mumbai,Availability_Status,Under_Construction,2074,13339.3243,0.3409,357.7509
+Mysore,Availability_Status,Ready_to_Move,2074,12899.4741,0.5974,374.0303
+Mysore,Availability_Status,Under_Construction,2143,13577.996,0.3341,367.3188
+Nagpur,Availability_Status,Ready_to_Move,2109,12553.9194,0.6083,374.6656
+Nagpur,Availability_Status,Under_Construction,2051,12942.9888,0.3262,363.7471
+New Delhi,Availability_Status,Ready_to_Move,3176,13183.1262,0.5901,373.6488
+New Delhi,Availability_Status,Under_Construction,3130,12766.4857,0.3419,353.6578
+Noida,Availability_Status,Ready_to_Move,3171,13290.3816,0.5932,379.6561
+Noida,Availability_Status,Under_Construction,3100,12989.186,0.3471,360.9943
+Patna,Availability_Status,Ready_to_Move,3011,13277.1747,0.5862,374.6998
+Patna,Availability_Status,Under_Construction,3188,12651.2675,0.3507,355.2472
+Pune,Availability_Status,Ready_to_Move,2053,13524.0954,0.5733,382.5646
+Pune,Availability_Status,Under_Construction,2171,13077.9368,0.3363,359.2344
+Raipur,Availability_Status,Ready_to_Move,3115,13116.7925,0.582,379.6946
+Raipur,Availability_Status,Under_Construction,3078,13131.8552,0.3499,352.7546
+Ranchi,Availability_Status,Ready_to_Move,3097,12947.2321,0.5996,374.6832
+Ranchi,Availability_Status,Under_Construction,3048,13296.1002,0.336,361.1641
+Silchar,Availability_Status,Ready_to_Move,3228,13243.5311,0.5976,373.4205
+Silchar,Availability_Status,Under_Construction,3176,13074.4391,0.3429,355.8837
+Surat,Availability_Status,Ready_to_Move,2962,13543.5474,0.5982,382.744
+Surat,Availability_Status,Under_Construction,3205,13223.7606,0.3279,362.5203
+Trivandrum,Availability_Status,Ready_to_Move,3048,12786.5513,0.5896,374.363
+Trivandrum,Availability_Status,Under_Construction,3134,12728.9249,0.3398,351.473
+Vijayawada,Availability_Status,Ready_to_Move,3113,13569.2761,0.5769,382.011
+Vijayawada,Availability_Status,Under_Construction,3231,12765.0106,0.3516,354.4206
+Vishakhapatnam,Availability_Status,Ready_to_Move,3067,13285.681,0.5944,384.5202
+Vishakhapatnam,Availability_Status,Under_Construction,3051,13204.191,0.3576,355.0656
+Warangal,Availability_Status,Ready_to_Move,3146,12860.3186,0.5884,376.5948
+Warangal,Availability_Status,Under_Construction,3120,13055.3087,0.3484,358.4025
