@@ -3,7 +3,7 @@
 Predicts whether a property is a "Good Investment" (classification) and its estimated price after 5 years (regression).
 Stack: Python, pandas, scikit-learn, XGBoost, MLflow, Streamlit.
 
-**Live app:** <add Streamlit link here> | **Full documentation:** [docs/PROJECT_DOCUMENTATION.md](docs/PROJECT_DOCUMENTATION.md) | **MLflow logs:** <https://drive.google.com/drive/folders/1-a0epP92o1qCvBXUQV6qqaloZAC16O_R?usp=sharing>
+**Live app:** <https://real-estate-investment-advisor-wm9lvyxsixe9zfrpa4arg9.streamlit.app/> | **Full documentation:** [docs/PROJECT_DOCUMENTATION.md](docs/PROJECT_DOCUMENTATION.md) | **MLflow logs:** <https://drive.google.com/drive/folders/1-a0epP92o1qCvBXUQV6qqaloZAC16O_R?usp=sharing>
 
 ## Project structure
 - `scripts/step1_preprocess.py` - cleaning, feature engineering, labels

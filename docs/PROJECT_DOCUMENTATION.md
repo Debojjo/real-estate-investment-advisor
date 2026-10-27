@@ -2,7 +2,7 @@
 
 **Predicting property profitability and future value** | Python, scikit-learn, XGBoost, MLflow, Streamlit
 
-Live app: `<add Streamlit link here>` | Code: https://github.com/Debojjo/real-estate-investment-advisor | MLflow logs: `<https://drive.google.com/drive/folders/1-a0epP92o1qCvBXUQV6qqaloZAC16O_R?usp=sharing>`
+Live app: `<https://real-estate-investment-advisor-wm9lvyxsixe9zfrpa4arg9.streamlit.app/>` | Code: https://github.com/Debojjo/real-estate-investment-advisor | MLflow logs: `<https://drive.google.com/drive/folders/1-a0epP92o1qCvBXUQV6qqaloZAC16O_R?usp=sharing>`
 
 ---
 
