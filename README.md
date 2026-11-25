@@ -175,6 +175,16 @@ Early iterations delivered the complete pipeline. Later iterations tightened the
 | Deployment | Any model could be chosen | Models above 25 MB are excluded; deployed models are about 1 MB | Fits GitHub and the cloud app |
 | App | Predictions, charts and model scores | Adds the baselines, checks and cross-validation, and explains the confidence score | Users can see how far to trust a result |
 
+## Use cases
+
+- **Individual investors** can screen a property quickly, see how its price compares with similar properties, and get a projected value after five years.
+- **Home buyers** can filter listings by city, budget, BHK and area, and rank the matches by predicted investment quality.
+- **Real estate companies and agents** can score every new listing in the same way to speed up the first round of investment analysis.
+- **Property platforms** can show the reasons behind each prediction (comparison with similar properties and the main drivers), which makes the result easier to trust.
+- **Analysts and planners** can use the market insight charts to compare cities, property types and infrastructure levels.
+
+Before real-world use, the models should be retrained on real transaction data with sale dates, so that "Good Investment" is based on observed appreciation instead of a rule.
+
 ## Limitations
 
 - The dataset looks synthetic: price is unrelated to size, BHK, location and amenities.
