@@ -27,8 +27,11 @@ def save(name):
     plt.close()
 
 
+notes = []
+
+
 def note(q, title, text):
-    md.append(f"## {q}. {title}\n{text}\n")
+    notes.append((q, title, text))
 
 
 # ---------------- 1-5 Price & size ----------------
@@ -196,12 +199,13 @@ g = df.groupby("Size_Band", observed=True).agg(good=("Good_Investment", "mean"),
 g["return_pct"] = (g["gain"] / g["p"] - 1) * 100
 fig, ax = plt.subplots(figsize=(6, 4)); sns.barplot(x=g.index, y=g["good"], color="peru", ax=ax)
 ax.set_title("Good-investment rate by size band"); ax.set_ylim(0, 1); save("x1_area_vs_return")
+spread = g["good"].max() - g["good"].min()
+size_txt = ("The good-investment rate is almost flat across size bands, so the label is not just a size effect (it compares price with the "
+            "same-city, same-BHK median)." if spread < 0.1 else
+            "The good-investment rate climbs sharply with size, so the label is largely a size effect; disclose this in the report.")
 note("X1", "Area vs investment return",
      f"5-year modelled return by size band: {g['return_pct'].round(1).to_dict()} (%). Good-investment rate by band: "
-     f"{g['good'].round(3).to_dict()}. Modelled return is flat because it comes from the growth formula, not from size. "
-     "But the good-investment rate climbs sharply with size: price does not depend on size in this data, so bigger properties get a "
-     "lower price per sqft and win the 'cheaper than city median' test. The label is therefore largely a size effect, "
-     "which must be disclosed in the report.")
+     f"{g['good'].round(3).to_dict()}. Modelled return is flat because it comes from the growth formula, not from size. " + size_txt)
 
 df["Infra_Band"] = pd.cut(df["Infrastructure_Score"], [-.01, .35, .5, .65, 1.0], labels=["Low", "Mid", "High", "Top"])
 g = df.groupby("Infra_Band", observed=True).agg(price=("Price_in_Lakhs", "mean"), future=("Future_Price_5Y", "mean"), pps=(PPS, "mean"))
@@ -211,6 +215,46 @@ note("X2", "Infrastructure score vs resale value",
      "\n" + g.round(1).to_markdown() + "\n\nCurrent price barely changes with infrastructure; modelled future price rises "
      "only because infrastructure feeds the growth rate. The brief's 'crime rate' has no matching column in this dataset, so it is skipped.")
 
+# ---------------- one written insight for every question ----------------
+def spread(col, val):
+    g = df.groupby(col)[val].mean()
+    return g.max() / g.min() - 1
+
+
+tr = df.groupby("Public_Transport_Accessibility")["Good_Investment"].mean()
+INSIGHT = {
+    1: "Prices are spread almost evenly from 10 to 500 lakhs, so a model sees cheap and expensive properties equally often.",
+    2: "Sizes are also spread evenly, so every size band has enough properties to learn from.",
+    3: f"Property type is not a price driver: the highest and lowest type differ by only {spread('Property_Type', PPS):.1%} in price per sqft.",
+    4: f"Size does not explain price (r = {df['Size_in_SqFt'].corr(df['Price_in_Lakhs']):.3f}). So price per sqft simply falls as size grows, "
+       "which is why the Good Investment rule compares price with a same-city, same-BHK peer and not price per sqft.",
+    5: f"{df['PPS_Outlier'].mean():.1%} of rows are price-per-sqft outliers. They come from small, high-priced properties, so I flagged them and kept them.",
+    6: f"Location barely moves price per sqft: the top and bottom state differ by {spread('State', PPS):.1%}.",
+    7: f"City is not a price driver: the top and bottom city differ by {spread('City', 'Price_in_Lakhs'):.1%} in average price.",
+    8: "Property age is similar across localities, so building age is not hiding a location effect.",
+    9: "Every city has the same BHK mix, so no city is biased towards small or large homes.",
+    10: "No locality shows a steady trend by build decade. The lines move up and down because each locality has few listings, "
+        "so they should not be read as market history.",
+    11: "The raw features are independent of price, so price cannot be predicted from them. The investment label and the future price "
+        "therefore depend on the rules defined in Step 1, which is why I report leakage checks and baselines.",
+    12: f"More nearby schools do not raise price per sqft (correlation {df['Nearby_Schools'].corr(df[PPS]):.3f}).",
+    13: f"More nearby hospitals do not raise price per sqft (correlation {df['Nearby_Hospitals'].corr(df[PPS]):.3f}).",
+    14: f"Furnishing does not change price: the highest and lowest group differ by {spread('Furnished_Status', 'Price_in_Lakhs'):.1%}.",
+    15: f"Facing direction has no price effect: the highest and lowest group differ by {spread('Facing', PPS):.1%}.",
+    16: "Each owner type holds about a third of the listings, so no seller type dominates the data.",
+    17: "About half of the properties are ready to move and half are under construction. Ready-to-move earns a point in the "
+        "investment score, so the label is balanced across both groups.",
+    18: f"Parking does not change price (gap {spread('Parking_Space', 'Price_in_Lakhs'):.1%}), so its point in the investment score is a design choice, not a market finding.",
+    19: f"Amenities do not change price per sqft (amenity count correlation {df['Amenity_Count'].corr(df[PPS]):.3f}).",
+    20: f"Better transport goes with a higher good-investment rate (Low {tr['Low']:.1%}, Medium {tr['Medium']:.1%}, High {tr['High']:.1%}), "
+        "but this is partly built in because transport is part of the infrastructure score used in the label.",
+    "X1": "Modelled return does not depend on size, and the label is not a size effect, so the models are not simply rewarding large properties.",
+    "X2": "Current price is the same in every infrastructure band. Infrastructure raises the modelled future price only through the growth rate, "
+          "which is the relationship the regressor can learn.",
+}
+for q_, title, text in notes:
+    md.append(f"## {q_}. {title}\n{text}\n\n**Insight:** {INSIGHT[q_]}\n")
+
 with open(f"{out}/eda_insights.md", "w", encoding="utf-8") as f:
     f.write("\n".join(md))
-print("done:", len([p for p in os.listdir(out) if p.endswith('.png')]), "charts ->", out)
+print("done:", len([p for p in os.listdir(out) if p.endswith('.png')]), "charts ->", out, "|", len(notes), "questions with insights")

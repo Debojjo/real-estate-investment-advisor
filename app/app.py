@@ -70,9 +70,11 @@ AMENITIES = ["Playground", "Gym", "Garden", "Pool", "Clubhouse"]
 
 # ------------------------------------------------------------------ helpers
 def predict(raw: pd.DataFrame):
+    """The regressor predicts the 5-year growth multiple; price after 5 years = current price x multiple."""
     X = add_features(raw, clf["peer"])
     Xf = X[ALL_FEATURES]
-    return X, clf["pipeline"].predict_proba(Xf)[:, 1], reg["pipeline"].predict(Xf)
+    multiple = reg["pipeline"].predict(Xf)
+    return X, clf["pipeline"].predict_proba(Xf)[:, 1], X["Price_in_Lakhs"].to_numpy() * multiple
 
 
 def explain_classifier(Xf: pd.DataFrame, top=8):
@@ -177,8 +179,9 @@ with tab_pred:
             st.markdown("### Estimated price after 5 years")
             st.metric("Estimated price", f"₹ {fut:,.1f} lakhs",
                       f"{fut - inp['Price_in_Lakhs']:+,.1f} lakhs ({growth:+.1%} per year)")
-            rmse = reg["metrics"]["rmse"]
-            st.caption(f"Typical model error on test data: about ±{rmse:.1f} lakhs (RMSE).")
+            rmse = reg["metrics"]["rmse_lakhs"]
+            st.caption(f"Typical model error on test data: about ±{rmse:.1f} lakhs (RMSE). The model predicts the growth "
+                       "multiple from the property's features; the price is today's price times that multiple.")
             yrs = list(range(6))
             fig = go.Figure()
             fig.add_scatter(x=yrs, y=[inp["Price_in_Lakhs"] * (1 + growth) ** t for t in yrs], mode="lines+markers",
@@ -299,14 +302,21 @@ with tab_insights:
 # ================================================================== TAB 4: MODEL
 with tab_model:
     st.subheader("Model performance (20% hold-out test set)")
-    st.markdown(f"**Classification - best: {metrics['best_classifier']}**")
+    st.markdown(f"**Classification: best is {metrics['best_classifier']}** (chosen on F1; precision, recall and ROC-AUC shown beside it)")
     st.dataframe(pd.DataFrame(metrics["classification"]), hide_index=True, width="stretch")
-    st.markdown(f"**Regression - best: {metrics['best_regressor']}** (price after 5 years, lakhs)")
+    st.caption("The two baselines show what guessing achieves: always predicting the majority class gives about 53% accuracy and F1 of 0.")
+    st.markdown(f"**Regression: best is {metrics['best_regressor']}**")
     st.dataframe(pd.DataFrame(metrics["regression"]), hide_index=True, width="stretch")
-    st.markdown("**Leakage check: price inputs removed**")
+    st.caption("The model predicts the 5-year growth multiple (future price / current price). The _multiple columns score that "
+               "multiple; the _lakhs columns score the final price. R² on the price is high even for a model that learned "
+               "nothing about growth, so the multiple is the fairer measure.")
+    st.markdown("**Leakage and ablation checks**")
     st.dataframe(pd.DataFrame(metrics["ablation"]), hide_index=True, width="stretch")
-    st.info("Scores are very high because both targets are calculated from the inputs. Without price inputs, classification "
-            "accuracy drops to about 65% and regression R² to about 0.")
+    st.markdown("**5-fold cross-validation of the selected models**")
+    st.dataframe(pd.DataFrame(metrics["cross_validation"]), hide_index=True, width="stretch")
+    st.info("Both targets are calculated from the inputs by documented rules, so scores are very high. Without price inputs, "
+            "classification accuracy drops to about 65%. For the regressor, removing the growth drivers (infrastructure, transport, "
+            "readiness, security, parking, age) drops R² on the multiple to about 0, which shows the model learns them.")
     m1, m2 = st.columns(2)
     cm_path = ROOT / "docs" / "models" / f"cm_{metrics['best_classifier']}.png"
     if cm_path.exists():
